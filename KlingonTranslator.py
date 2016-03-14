@@ -2,7 +2,7 @@ import LoadDictionary
 import CommonPhrases
 import Flashcard
 
-__author__ = 'ntallmon'
+__author__ = 'thorofasgaard'
 # A little program to translate and learn Klingon (tlhlngan Hol)
 import FileHandler
 

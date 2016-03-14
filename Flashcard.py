@@ -1,7 +1,7 @@
 from collections import OrderedDict
 import random
 
-__author__ = 'ntallmon'
+__author__ = 'thorofasgaard'
 import LoadDictionary
 import math
 # A basic Flashcard game

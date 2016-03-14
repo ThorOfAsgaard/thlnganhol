@@ -1,4 +1,4 @@
-__author__ = 'ntallmon'
+__author__ = 'thorofasgaard'
 
 # reads/writes files
 

@@ -1,5 +1,5 @@
 import FileHandler
-__author__ = 'ntallmon'
+__author__ = 'thorofasgaard'
 
 
 dictionary = {}
