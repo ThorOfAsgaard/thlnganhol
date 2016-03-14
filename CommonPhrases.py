@@ -3,6 +3,7 @@ __author__ = 'ntallmon'
 
 phrases = {}
 
+
 def loadPhrases():
     file = FileHandler.loadFile('Resources/CommonPhrases.csv', 'r')
     for line in file:
@@ -29,10 +30,12 @@ def phrases_menu():
     elif choice.upper() == 'R':
         return
 
+
 def list_phrase():
     for key, value in phrases.items():
         print(key.upper() + ":" + str(value) +'\n')
     phrases_menu()
+
 
 def search_phrases():
     phrase = input("Enter query to search for a phrase:")
