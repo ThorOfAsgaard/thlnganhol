@@ -11,6 +11,16 @@ correct = []
 incorrect = []
 asked = []
 
+def createdeck():
+    deckname = input("Enter the name of your deck");
+
+
+def opendeck():
+    # TODO: get a list of the decks available
+    deckname = input("Which deck would you like to open?");
+
+
+
 
 def menu():
     print('==================== FLASHCARDS MENU ====================')
