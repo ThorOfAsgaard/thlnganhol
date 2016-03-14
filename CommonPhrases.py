@@ -4,7 +4,7 @@ __author__ = 'ntallmon'
 phrases = {}
 
 def loadPhrases():
-    file = FileHandler.loadFile('CommonPhrases.csv', 'r')
+    file = FileHandler.loadFile('Resources/CommonPhrases.csv', 'r')
     for line in file:
         details = line.split(',')
         values = ""
@@ -30,7 +30,7 @@ def phrases_menu():
         return
 
 def list_phrase():
-    for key, value in phrases:
+    for key, value in phrases.items():
         print(key.upper() + ":" + str(value) +'\n')
     phrases_menu()
 

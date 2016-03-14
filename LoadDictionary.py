@@ -8,7 +8,7 @@ mode = ""
 def loadDictionary(language):
     global mode
     mode = language
-    file = FileHandler.loadFile(language+".csv", "r")
+    file = FileHandler.loadFile("Resources/"+language+".csv", "r")
     for line in file:
         vals = line.split(',')
 
@@ -16,8 +16,8 @@ def loadDictionary(language):
 
         translation.update({vals[1].strip(): vals[0].strip()})
 
-    print(dictionary)
-    print(translation)
+    return dictionary
+
 
 def lookup():
     word = input('Enter your query, type "Q" to quit:')

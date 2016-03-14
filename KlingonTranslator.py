@@ -1,5 +1,6 @@
 import LoadDictionary
 import CommonPhrases
+import Flashcard
 
 __author__ = 'ntallmon'
 # A little program to translate and learn Klingon (tlhlngan Hol)
@@ -18,6 +19,8 @@ def print_menu():
     choice = input("Select an option from above:")
     if choice.upper() == 'P':
         print("FOO")
+    elif choice.upper() == 'F':
+        Flashcard.loaddeck(20)
     elif choice.upper() == 'D':
         LoadDictionary.loadDictionary('klingon')
         LoadDictionary.lookup()
