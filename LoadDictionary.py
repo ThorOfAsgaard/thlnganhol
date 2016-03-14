@@ -14,27 +14,36 @@ def loadDictionary(language):
         # check to make sure their not blank
         if vals[0] == '':
             continue
-        dictionary.update({vals[0].strip(): vals[1].strip()})
+        value = ""
 
-        translation.update({vals[1].strip(): vals[0].strip()})
+        for i in range(1, len(vals)):
+            if vals[i].strip() != '':
+                value += vals[i].strip() + ","
+        dictionary.update({vals[0].strip(): value.strip()})
 
+        translation.update({value.strip(): vals[0].strip()})
+
+    print("**************** Dictionary Loaded ****************")
     return dictionary
 
 
 def lookup():
+    ret = None
     word = input('Enter your query, type "Q" to quit:')
     if word.upper() == 'Q':
         return
     else:
-        ret = dictionary.get(word)
-        if ret == None:
-            ret = translation.get(word)
-            if ret == None:
-                print('Unable to find '+ word + ' anywhere')
-            else:
-                print(word+ ': ' + ret)
+        keys = dictionary.keys()
+        for item in dictionary.items():
+
+            if word.upper() in item[0].upper() or word.upper() in item[1].upper():
+                ret = item
+            #elif word.upper() in item[1].upper():
+#                ret = item[1].upper()
+        if ret is None:
+                print('Unable to find "'+ word + '" anywhere')
         else:
-            print(word + ': ' + ret)
+            print(word+ ': ' + str(ret))
         lookup()
 
 
