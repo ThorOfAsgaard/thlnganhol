@@ -1,14 +1,16 @@
 import FileHandler
-__author__ = 'thorofasgaard'
 
+__author__ = 'thorofasgaard'
 
 dictionary = {}
 translation = {}
 mode = ""
+
+
 def loadDictionary(language):
     global mode
     mode = language
-    file = FileHandler.loadFile("Resources/"+language+".csv", "r")
+    file = FileHandler.loadFile("Resources/" + language + ".csv", "r")
     for line in file:
         vals = line.split(',')
         # check to make sure their not blank
@@ -33,19 +35,17 @@ def lookup():
     if word.upper() == 'Q':
         return
     else:
-        keys = dictionary.keys()
+        # keys = dictionary.keys()
         for item in dictionary.items():
 
-            if word.upper() in item[0].upper() or word.upper() in item[1].upper():
-                ret = item
-            #elif word.upper() in item[1].upper():
-#                ret = item[1].upper()
+            if word.upper() in str(item).upper():
+                if ret is None:
+                    ret = ""
+                ret = ret + str(item)
+                # elif word.upper() in item[1].upper():
+            #                ret = item[1].upper()
         if ret is None:
-                print('Unable to find "'+ word + '" anywhere')
+            print('Unable to find "' + word + '" anywhere')
         else:
-            print(word+ ': ' + str(ret))
+            print(word + ': ' + str(ret))
         lookup()
-
-
-
-
