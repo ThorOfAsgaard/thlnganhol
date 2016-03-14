@@ -13,25 +13,34 @@ asked = []
 
 
 def menu():
+    print('==================== FLASHCARDS MENU ====================')
     print('(P)lay the game')
     print('(R)eturn to main menu')
     choice = input('Select an option:')
     if choice.upper() == 'P':
         playgame()
+    else:
+        return
 
 
 def playgame():
+    correct = []
+    incorrect = []
     print('Game starting')
     while len(deck) > 0:
         ask_question()
     print("Your score:" + str(len(correct)) +"/" + str(len(correct)+len(incorrect)))
+    choice = input("Would you like to see which questions you missed? Y/N")
+    if choice.upper() == 'Y':
+        for item in incorrect:
+            print(item +"\n")
+
     menu()
 
 def ask_question():
     num = random.randrange(0, len(deck))
     question = deck[num]
     asked.append(question)
-    print(question)
     answers = [question]
 
     # print(question)
@@ -42,18 +51,26 @@ def ask_question():
         x += 1
     x = 0
     (key, value) = question
-    print("Question " + str(len(asked)) + ":   " + key + "")
-
-    while x < len(answers):
-        (key, value) = answers[x]
-        print("(" + str(x) + ")" + value)
+    print("========================= QUESTION " + str(len(asked)) + ":   " + key.upper() + "  =========================")
+    randanswers = []
+    x = 0;
+    while len(answers) > 0:
+        num = random.randrange(0, len(answers))
+        randanswers.append(answers[num])
+        (key, value) = answers[num]
+        print("(" + str(x+1) + ")" + value)
         x += 1
+        del answers[num]
+
+    print("(Q)uit")
     choice = input("Choose the correct answer:")
-    if answers[int(choice)] == question:
-        print("Correct")
+    if choice.upper() == 'Q':
+        menu()
+    elif randanswers[int(choice)-1] == question:
+        print("==================== Correct ====================")
         correct.append(asked[0])
     else:
-        print("Incorrect")
+        print("==================== Incorrect ====================")
         incorrect.append(asked[0])
     del asked[0]
 

@@ -36,10 +36,12 @@ def list_phrase():
 
 def search_phrases():
     phrase = input("Enter query to search for a phrase:")
-
+    ret = "UNABLE TO FIND " + phrase
     for key, value in phrases.items():
         if phrase.lower() in key.lower():
-            print("Match:" + phrase + ":" + str(value))
+            ret = "MATCH FOUND:" + phrase + ":" + str(value)
+    print(ret)
+    phrases_menu()
 
 
 
