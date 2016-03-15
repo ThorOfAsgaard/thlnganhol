@@ -22,7 +22,7 @@ def print_menu():
     elif choice.upper() == 'F':
         Flashcard.loaddeck(20)
     elif choice.upper() == 'D':
-        LoadDictionary.loadDictionary('klingon')
+        LoadDictionary.loadDictionary('dictionary')
         LoadDictionary.lookup()
     elif choice.upper() == 'C':
         CommonPhrases.loadPhrases()
@@ -31,6 +31,7 @@ def print_menu():
         exit()
     else:
         print_menu()
+
 
 def main():
     print("yI'el!")
