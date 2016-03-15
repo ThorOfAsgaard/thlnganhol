@@ -30,6 +30,7 @@ def loadDictionary(language):
 
 
 def lookup():
+    ## TODO: use nltk to find synonyms
     ret = None
     word = input('Enter your query, type "Q" to quit:')
     if word.upper() == 'Q':

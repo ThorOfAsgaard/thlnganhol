@@ -9,6 +9,10 @@ def index():
 
     return render_template("index.html")
 
+@app.route("/search")
+def search(str):
+    return "Search =" + str
+
 if __name__ == "__main__":
     app.run()
 

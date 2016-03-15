@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>tlhlngan hol</title>
-    <link rel="stylesheet" href="./bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" />
-    <link rel="stylesheet" href="./bower_components/bootstrap-material-design/dist/css/ripple.min.css" />
-<script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="./bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
-    <script type="text/javascript" src="./bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <link rel="stylesheet"
+          href="/static/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css"/>
+    <link rel="stylesheet" href="/static/bower_components/bootstrap-material-design/dist/css/ripples.min.css"/>
+    <script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="/static/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script type="text/javascript"
+            src="/static/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 
+    <script>
+$(function() {
+$("#searchQuery").on('keyup', function() {
+        $.get('/search', $(this).val(), function(ret) {
+        $("#result").html(ret);
+        });
+});
+});
 
+    </script>
 </head>
 <body>
 <div class="container">
     <div class="jumbotron">
-        <h1>Foo</h1>
+        <h1 class="text-primary">yI'el!</h1>
+        <form-group>
+            <label>
+                Enter your query:
+                <input type="form-control" id="searchQuery">
+            </label>
+
+
+        </form-group>
+        <div class="well" id="result"></div>
     </div>
 </div>
 </body>
