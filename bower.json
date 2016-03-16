@@ -1,0 +1,22 @@
+{
+  "name": "KlingonTranslator",
+  "homepage": "https://github.com/ThorOfAsgaard/thlnganhol",
+  "authors": [
+    "thor@asgaardianworkshop.com"
+  ],
+  "description": "A simple python/flask program for learning Klingon",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "klingon"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tlhlngan hol</title>
+    <link rel="stylesheet"
+          href="/static/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css"/>
+    <link rel="stylesheet" href="/static/bower_components/bootstrap-material-design/dist/css/ripples.min.css"/>
+    <script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="/static/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script type="text/javascript"
+            src="/static/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+
+    <script>
+$(function() {
+$("#searchQuery").on('keyup', function() {
+        $.get('/search', {query: $(this).val()}, function(ret) {
+        $("#result").html(ret);
+        });
+});
+$(".common-phrases").on('click', function() {
+        $.get('/common-phrases', function(ret) {
+        $("#result").html(ret)
+        });
+});
+$(".synonyms").on('click', function (){
+        $.get('/synonyms', {'query': $("#searchQuery").val()}, function(ret) {
+                $("#synonyms").html(ret);
+        });
+
+});
+});
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-primary">yI'el!</h1>
+        <div class="btn-group btn-group-raised">
+            <button class="btn btn-primary common-phrases">Common Phrases</button>
+        </div>
+        <form-group>
+            <label>
+                Enter your query:
+                <input type="form-control" id="searchQuery">
+            </label>
+
+
+        </form-group>
+        <div class="well" id="result"></div>
+        <button class="btn btn-raised btn-info action synonyms" data-action="synonyms">Synonyms</button>
+        <div class="well" id="synonyms"></div>
+    </div>
+</div>
+</body>
+</html>

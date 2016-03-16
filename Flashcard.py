@@ -2,7 +2,7 @@ from collections import OrderedDict
 import random
 
 __author__ = 'thorofasgaard'
-import LoadDictionary
+import Dictionary
 import math
 # A basic Flashcard game
 
@@ -87,7 +87,7 @@ def ask_question():
 
 def loaddeck(numcards):
     global deck
-    tempDict = OrderedDict(LoadDictionary.loadDictionary("klingon"))
+    tempDict = OrderedDict(Dictionary.loadDictionary("klingon"))
     tempDeck = []
     for key, value in tempDict.items():
         item = {key, value}

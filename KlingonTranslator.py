@@ -1,4 +1,4 @@
-import LoadDictionary
+import Dictionary
 import CommonPhrases
 import Flashcard
 
@@ -22,8 +22,8 @@ def print_menu():
     elif choice.upper() == 'F':
         Flashcard.loaddeck(20)
     elif choice.upper() == 'D':
-        LoadDictionary.loadDictionary('klingon')
-        LoadDictionary.lookup()
+        Dictionary.loadDictionary('dictionary')
+        Dictionary.lookup(None)
     elif choice.upper() == 'C':
         CommonPhrases.loadPhrases()
 
@@ -31,6 +31,7 @@ def print_menu():
         exit()
     else:
         print_menu()
+
 
 def main():
     print("yI'el!")
