@@ -1,7 +1,442 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c40884d-a6df-4f94-80f9-e197a58ce27e" name="Default" comment="" />
+    <list default="true" id="2c40884d-a6df-4f94-80f9-e197a58ce27e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\CommonPhrases.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\LoadDictionary.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\_config.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\bootstrap-elements.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\css\bootstrap-material-design.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\css\bootstrap-material-design.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\css\bootstrap-material-design.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\css\bootstrap-material-design.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\css\ripples.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\css\ripples.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\css\ripples.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\css\ripples.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\js\material.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\js\material.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\js\material.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\js\ripples.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\js\ripples.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\dist\js\ripples.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\grunt\configBridge.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_cards.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_checkboxes.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_colors.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_dialogs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_dividers.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_form.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_import-bs-less.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_import-bs-sass.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_inputs-size.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_inputs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_lists.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_panels.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_plugins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_popups.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_progress.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_radios.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_shadows.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_tabs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_themes.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_togglebutton.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_typography.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\_welljumbo.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\bootstrap-material-design.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\plugins\_plugin-dropdownjs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\plugins\_plugin-nouislider.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\plugins\_plugin-selectize.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\plugins\_plugin-snackbarjs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\less\ripples.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\example\client\bmd.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\example\client\bmd.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\example\client\bmd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\example\run.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\example\run.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\init.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\package.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\meteor\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_alerts.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_checkboxes.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_colors-map.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_colors.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_dialogs.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_dividers.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_form.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_import-bs-less.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_import-bs-sass.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_inputs-size.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_mixins-utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_navbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_panels.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_plugins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_popups.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_radios.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_shadows.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_themes.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_togglebutton.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\_welljumbo.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\bootstrap-material-design.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\plugins\_plugin-dropdownjs.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\plugins\_plugin-nouislider.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\plugins\_plugin-selectize.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\plugins\_plugin-snackbarjs.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\sass\ripples.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\scripts\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\scripts\material.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\scripts\ripples.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-material-design\testcase.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap-sprockets.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\affix.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\alert.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\button.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\modal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\popover.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\tab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\javascripts\bootstrap\transition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\_bootstrap-compass.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\_bootstrap-mincer.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\_bootstrap-sprockets.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\_bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_alerts.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_badges.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_breadcrumbs.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_button-groups.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_carousel.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_close.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_code.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_component-animations.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_dropdowns.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_glyphicons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_input-groups.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_jumbotron.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_media.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_modals.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_navbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_navs.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_normalize.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_pager.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_panels.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_popovers.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_print.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_progress-bars.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_responsive-embed.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_responsive-utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_scaffolding.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_thumbnails.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_tooltip.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\_wells.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_alerts.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_background-variant.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_border-radius.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_center-block.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_gradients.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_grid-framework.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_hide-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_image.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_nav-divider.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_nav-vertical-align.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_opacity.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_panels.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_progress-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_reset-filter.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_reset-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_resize.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_responsive-visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_size.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_tab-focus.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_table-row.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_text-emphasis.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_text-overflow.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\assets\stylesheets\bootstrap\mixins\_vendor-prefixes.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap-sass\sache.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\css\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\css\bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\css\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\css\bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\dist\js\npm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\grunt\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\grunt\bs-commonjs-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\grunt\bs-glyphicons-data-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\grunt\bs-lessdoc-parser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\grunt\bs-raw-files-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\grunt\configBridge.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\grunt\sauce_browsers.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\affix.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\alert.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\button.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\modal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\popover.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\tab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\js\transition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\.csscomb.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\.csslintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\badges.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\close.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\code.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\forms.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\glyphicons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\grid.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\input-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\jumbotron.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\labels.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\media.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\background-variant.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\border-radius.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\center-block.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\clearfix.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\forms.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\gradients.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\grid-framework.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\grid.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\hide-text.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\image.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\labels.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\nav-divider.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\nav-vertical-align.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\opacity.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\panels.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\progress-bar.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\reset-filter.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\reset-text.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\resize.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\responsive-visibility.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\size.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\tab-focus.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\table-row.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\text-emphasis.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\text-overflow.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\mixins\vendor-prefixes.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\modals.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\navs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\pager.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\panels.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\print.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\responsive-embed.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\tables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\theme.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\type.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\less\wells.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\nuget\MyGet.ps1" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\nuget\bootstrap.less.nuspec" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\nuget\bootstrap.nuspec" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\package.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\bootstrap\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\dist\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\dist\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\dist\jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax\jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax\load.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax\parseJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax\parseXML.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax\script.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax\var\nonce.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax\var\rquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\ajax\xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\attributes\attr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\attributes\classes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\attributes\prop.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\attributes\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\attributes\val.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\core.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\core\access.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\core\init.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\core\parseHTML.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\core\ready.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\core\var\rsingleTag.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\addGetHookIf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\curCSS.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\defaultDisplay.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\hiddenVisibleSelectors.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\swap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\var\cssExpand.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\var\getStyles.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\var\isHidden.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\var\rmargin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\css\var\rnumnonpx.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\data\Data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\data\accepts.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\data\var\data_priv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\data\var\data_user.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\deferred.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\effects.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\effects\Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\effects\animatedSelector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\event.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\event\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\event\alias.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\event\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\exports\amd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\exports\global.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\intro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\manipulation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\manipulation\_evalUrl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\manipulation\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\manipulation\var\rcheckableType.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\offset.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\outro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\queue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\queue\delay.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\selector-native.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\selector-sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\selector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\sizzle\dist\sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\sizzle\dist\sizzle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\sizzle\dist\sizzle.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\traversing.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\traversing\findFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\traversing\var\rneedsContext.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\arr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\class2type.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\concat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\hasOwn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\indexOf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\pnum.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\push.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\rnotwhite.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\slice.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\strundefined.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\var\toString.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\bower_components\jquery\src\wrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ntallmon\PycharmProjects\KlingonTranslator\klingon.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="KlingonTranslator.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +455,7 @@
     <favorites_list name="KlingonTranslator" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="FileHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileHandler.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,11 +536,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6666667">
-              <caret line="52" column="95" selection-start-line="52" selection-start-column="95" selection-end-line="52" selection-end-column="95" />
+            <state vertical-scroll-proportion="-2.0">
+              <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -120,6 +565,9 @@
         <option value="Html5" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -138,6 +586,7 @@
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/Dictionary.py" />
         <option value="$PROJECT_DIR$/Templates/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -146,11 +595,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="1920" />
+    <option name="width" value="1601" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -173,10 +624,9 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,7 +676,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,6 +699,23 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="false" name="CommonPhrases" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="KlingonTranslator" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CommonPhrases.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="FileHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,23 +767,134 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="CommonPhrases" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="KlingonTranslator" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CommonPhrases.py" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="KlingonTranslator" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="KlingonTranslator" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="KlingonTranslator" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="KlingonTranslator" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="KlingonTranslator" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.CommonPhrases" />
+      <item index="1" class="java.lang.String" itemvalue="Python.FileHandler" />
+      <item index="2" class="java.lang.String" itemvalue="Python.KlingonTranslator" />
+      <item index="3" class="java.lang.String" itemvalue="Python.LoadDictionary" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -333,28 +910,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1920" y="0" width="1601" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13486141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946298" sideWeight="0.5022393" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3340249" sideWeight="0.4977607" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2843602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280116" sideWeight="0.4977607" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.134357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946298" sideWeight="0.5022393" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280116" sideWeight="0.4977607" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3329821" sideWeight="0.4977607" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2843602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -373,6 +950,78 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/FileHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flashcard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommonPhrases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/klingon.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="501" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="501" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/dictionary.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KlingonTranslator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FileHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -611,8 +1260,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6666667">
-          <caret line="52" column="95" selection-start-line="52" selection-start-column="95" selection-end-line="52" selection-end-column="95" />
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding />
         </state>
       </provider>
