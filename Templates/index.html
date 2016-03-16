@@ -15,9 +15,20 @@
     <script>
 $(function() {
 $("#searchQuery").on('keyup', function() {
-        $.get('/search', $(this).val(), function(ret) {
+        $.get('/search', {query: $(this).val()}, function(ret) {
         $("#result").html(ret);
         });
+});
+$(".common-phrases").on('click', function() {
+        $.get('/common-phrases', function(ret) {
+        $("#result").html(ret)
+        });
+});
+$(".synonyms").on('click', function (){
+        $.get('/synonyms', {'query': $("#searchQuery").val()}, function(ret) {
+                $("#synonyms").html(ret);
+        });
+
 });
 });
 
@@ -27,6 +38,9 @@ $("#searchQuery").on('keyup', function() {
 <div class="container">
     <div class="jumbotron">
         <h1 class="text-primary">yI'el!</h1>
+        <div class="btn-group btn-group-raised">
+            <button class="btn btn-primary common-phrases">Common Phrases</button>
+        </div>
         <form-group>
             <label>
                 Enter your query:
@@ -36,6 +50,8 @@ $("#searchQuery").on('keyup', function() {
 
         </form-group>
         <div class="well" id="result"></div>
+        <button class="btn btn-raised btn-info action synonyms" data-action="synonyms">Synonyms</button>
+        <div class="well" id="synonyms"></div>
     </div>
 </div>
 </body>

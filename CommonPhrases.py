@@ -14,7 +14,7 @@ def loadPhrases():
 
         entry = {details[0]: {values}}
         phrases.update(entry)
-    phrases_menu()
+    # phrases_menu()
 
 
 def phrases_menu():
@@ -30,6 +30,9 @@ def phrases_menu():
     elif choice.upper() == 'R':
         return
 
+
+def return_all():
+    return phrases
 
 def list_phrase():
     for key, value in phrases.items():
