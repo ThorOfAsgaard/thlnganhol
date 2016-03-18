@@ -45,7 +45,7 @@ def find_synonyms(query):
 
             list.append(r)
 
-    return str(list)
+    return list
 
 
 def lookup(query):

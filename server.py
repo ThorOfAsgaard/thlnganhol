@@ -41,7 +41,12 @@ def search():
 @app.route('/synonyms', methods=['POST', 'GET'])
 def synonyms():
     ret = str(request.args['query'])
-    return Dictionary.find_synonyms(ret)
+    html = "";
+    synonyms = Dictionary.find_synonyms(ret)
+    for syn in synonyms:
+        html = html + "<li class='list-group-item'>" + str(syn) +  "</li>"
+
+    return html
 
 if __name__ == "__main__":
     app.run()

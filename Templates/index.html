@@ -23,6 +23,11 @@ $("#searchQuery").on('keyup', function() {
 
         $.get('/search', {query: $(this).val()}, function(ret) {
         $("#result").html(ret);
+         $("#synonyms").html("<div class='alert alert-info'>Waiting</div>");
+
+                $.get('/synonyms', {'query': $("#searchQuery").val()}, function(ret) {
+                    $("#synonyms").html(ret);
+                });
         });
         }
 });
@@ -33,6 +38,7 @@ $(".common-phrases").on('click', function() {
 });
 $(".synonyms").on('click', function (){
         $("#synonyms").html("<div class='alert alert-info'>Waiting</div>");
+
         $.get('/synonyms', {'query': $("#searchQuery").val()}, function(ret) {
                 $("#synonyms").html(ret);
         });
@@ -64,7 +70,7 @@ $(".synonyms").on('click', function (){
         </div>
 
         <div class="well" id="result"></div>
-        <button class="btn btn-raised btn-info action synonyms" data-action="synonyms">Synonyms</button>
+        <!--<button class="btn btn-raised btn-info action synonyms" data-action="synonyms">Synonyms</button>-->
         <div class="well" id="synonyms"></div>
     </div>
 </div>
