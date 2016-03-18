@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>tlhlngan hol</title>
     <link rel="stylesheet"
+          href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
           href="/static/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css"/>
+
+
     <link rel="stylesheet" href="/static/bower_components/bootstrap-material-design/dist/css/ripples.min.css"/>
     <script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript"
@@ -40,21 +44,25 @@ $(".synonyms").on('click', function (){
     </script>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="jumbotron jumbotron-inverse center-block">
-        <image class=" pull-right" src="static/image/Klingon_Empire_logo.png"></image>
-        <!--<h1 class="text-primary text-center">yI'el!</h1>-->
-        <div class="btn-group btn-group-raised">
-            <button class="btn btn-primary common-phrases">Common Phrases</button>
-        </div>
-        <form-group>
+<div class="container">
+
+    <div class="jumbotron center-block" style="background: #000">
+        <div class="">
+        <image class="img-responsive center-block" src="static/image/Klingon_Empire_logo.png"></image>
+        <h1 class="text-danger text-center">De'wl' thlhingan hol yI'el!</h1>
+          <form-group>
             <label>
-                Enter your query:
-                <input type="text" class="form-control" id="searchQuery">
+                yu' vItlhobnIS:
+                <input type="text" class="form-control" id="searchQuery" placeholder="question, you must ask!">
             </label>
-
-
         </form-group>
+        </div>
+        <div class="btn-group btn-group-raised">
+            <button class="btn btn-default btn-raised common-phrases">ja'tah'mey (Sayings)</button>
+            <button class="btn btn-default btn-raised action" data-action="grammar">Grammar</button>
+            <button class="btn btn-default btn-raised  action" data-action="pronunciation">Pronunciation</button>
+        </div>
+
         <div class="well" id="result"></div>
         <button class="btn btn-raised btn-info action synonyms" data-action="synonyms">Synonyms</button>
         <div class="well" id="synonyms"></div>

@@ -42,7 +42,7 @@ def find_synonyms(query):
             r = syn.lemma_names()  # list
 
             # (key, value) in r
-            print(r)
+
             list.append(r)
 
     return str(list)
