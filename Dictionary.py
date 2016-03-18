@@ -33,16 +33,22 @@ def loadDictionary(language):
 
 def find_synonyms(query):
     ret = None
-
+    list = []
     synonyms = wordnet.synsets(query)
     if synonyms is not None:
-        print(synonyms)
-    return str(synonyms)
+        for syn in synonyms:
+            r = syn.lemma_names() #list
+
+           # (key, value) in r
+            print(r)
+            list.append(r)
+
+    return str(list)
 
 
 def lookup(query):
     ## TODO: use nltk to find synonyms
-    ret = None
+    ret = ""
     if query is None:
         word = input('Enter your query, type "Q" to quit:')
         if word.upper() == 'Q':
@@ -56,14 +62,14 @@ def lookup(query):
     retArray = []
     for item in dictionary.items():
         if word.upper() in str(item).upper():
-            if ret is None:
-                ret = ""
+
             ret = ret + str(item)
             retArray.append(item)
             # elif word.upper() in item[1].upper():
             #                ret = item[1].upper()
-    if ret is None:
-        ret = 'Unable to find "' + word + '" anywhere'
+    if ret is "":
+
+        ret = 'Unable to find "' + word + '" in the dictionary'
     else:
         ret = word + ': ' + str(ret)
 

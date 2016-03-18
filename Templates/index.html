@@ -25,6 +25,7 @@ $(".common-phrases").on('click', function() {
         });
 });
 $(".synonyms").on('click', function (){
+        $("#synonyms").html("<div class='alert alert-info'>Waiting</div>");
         $.get('/synonyms', {'query': $("#searchQuery").val()}, function(ret) {
                 $("#synonyms").html(ret);
         });
