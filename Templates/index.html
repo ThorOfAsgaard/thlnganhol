@@ -15,9 +15,12 @@
     <script>
 $(function() {
 $("#searchQuery").on('keyup', function() {
+        if($(this).val().length > 1) {
+
         $.get('/search', {query: $(this).val()}, function(ret) {
         $("#result").html(ret);
         });
+        }
 });
 $(".common-phrases").on('click', function() {
         $.get('/common-phrases', function(ret) {
@@ -33,19 +36,21 @@ $(".synonyms").on('click', function (){
 });
 });
 
+
     </script>
 </head>
 <body>
-<div class="container">
-    <div class="jumbotron">
-        <h1 class="text-primary">yI'el!</h1>
+<div class="container-fluid">
+    <div class="jumbotron jumbotron-inverse center-block">
+        <image class=" pull-right" src="static/image/Klingon_Empire_logo.png"></image>
+        <!--<h1 class="text-primary text-center">yI'el!</h1>-->
         <div class="btn-group btn-group-raised">
             <button class="btn btn-primary common-phrases">Common Phrases</button>
         </div>
         <form-group>
             <label>
                 Enter your query:
-                <input type="form-control" id="searchQuery">
+                <input type="text" class="form-control" id="searchQuery">
             </label>
 
 

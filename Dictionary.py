@@ -23,9 +23,11 @@ def loadDictionary(language):
         for i in range(1, len(vals)):
             if vals[i].strip() != '':
                 value += vals[i].strip() + ","
-        dictionary.update({vals[0].strip(): value.strip()})
 
-        translation.update({value.strip(): vals[0].strip()})
+        ret = {vals[0].strip(): value.strip()}
+        ret2 = {value.strip(): vals[0].strip()}
+        dictionary.update(ret)
+        translation.update(ret2)
 
     print("**************** Dictionary Loaded ****************")
     return dictionary
@@ -37,9 +39,9 @@ def find_synonyms(query):
     synonyms = wordnet.synsets(query)
     if synonyms is not None:
         for syn in synonyms:
-            r = syn.lemma_names() #list
+            r = syn.lemma_names()  # list
 
-           # (key, value) in r
+            # (key, value) in r
             print(r)
             list.append(r)
 
@@ -56,17 +58,15 @@ def lookup(query):
     else:
         word = query
     # word = input('Enter your query, type "Q" to quit:')
-
     # keys = dictionary.keys()
 
     retArray = []
-    for item in dictionary.items():
-        if word.upper() in str(item).upper():
 
-            ret = ret + str(item)
-            retArray.append(item)
-            # elif word.upper() in item[1].upper():
-            #                ret = item[1].upper()
+    for key, value in dictionary.items():
+        if word.upper() in str(key).upper() or word.upper() in str(value).upper():
+            ret = str(key) + ":" + value
+            retArray.append(ret)
+
     if ret is "":
 
         ret = 'Unable to find "' + word + '" in the dictionary'
