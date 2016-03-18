@@ -34,6 +34,14 @@ def phrases_menu():
 def return_all():
     return phrases
 
+
+def list_phrases_web():
+    ret = []
+    for key, value in phrases.items():
+        ret.append({key: str(value)})
+    return ret
+
+
 def list_phrase():
     for key, value in phrases.items():
         print(key.upper() + ":" + str(value) +'\n')

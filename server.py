@@ -1,11 +1,14 @@
 __author__ = 'thor'
-from flask import Flask, request, session, url_for, redirect, render_template, abort, _app_ctx_stack
+from flask import Flask, request, render_template
+
 import Dictionary
 import CommonPhrases
+
 # import KlingonTranslator
 
 app = Flask(__name__)
 app.debug = True
+
 
 @app.route("/")
 def index():
@@ -15,20 +18,19 @@ def index():
 @app.route('/common-phrases', methods=['POST', 'GET'])
 def commonphrases():
     CommonPhrases.loadPhrases()
-    ret = CommonPhrases.return_all()
+    ret = CommonPhrases.list_phrases_web()
     html = ""
     for phrase in ret:
-        html +="<div class='well well-sm'>"
-        html += phrase
+        html += "<div class='well well-sm'>"
+        html += str(phrase)
         html += "</div>"
-
+    return html
 
 @app.route('/search', methods=['POST', 'GET'])
 def search():
-
     ret = str(request.args['query'])
     Dictionary.loadDictionary('dictionary')
-    #retString = LoadDictionary.lookup(ret)
+    # retString = LoadDictionary.lookup(ret)
     ret = Dictionary.lookup(ret)
     retHtml = ""
     for item in ret:
@@ -38,15 +40,18 @@ def search():
 
     return retHtml
 
+
+
 @app.route('/synonyms', methods=['POST', 'GET'])
 def synonyms():
     ret = str(request.args['query'])
     html = "";
     synonyms = Dictionary.find_synonyms(ret)
     for syn in synonyms:
-        html = html + "<li class='list-group-item'>" + str(syn) +  "</li>"
+        html = html + "<li class='list-group-item'>" + str(syn) + "</li>"
 
     return html
+
 
 if __name__ == "__main__":
     app.run()
