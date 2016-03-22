@@ -1,6 +1,7 @@
 from nltk.corpus import wordnet
 
 import FileHandler
+import Pronunciation
 
 __author__ = 'thorofasgaard'
 
@@ -19,15 +20,12 @@ def loadDictionary(language):
         if vals[0] == '':
             continue
         value = ""
-
         for i in range(1, len(vals)):
             if vals[i].strip() != '':
-                value += vals[i].strip() + ","
+                value += vals[i].strip() + " ,"
 
         ret = {vals[0].strip(): value.strip()}
-        ret2 = {value.strip(): vals[0].strip()}
         dictionary.update(ret)
-        translation.update(ret2)
 
     print("**************** Dictionary Loaded ****************")
     return dictionary
@@ -61,10 +59,15 @@ def lookup(query):
     # keys = dictionary.keys()
 
     retArray = []
-
+    Pronunciation.loadpronunciationpatrix()
     for key, value in dictionary.items():
         if word.upper() in str(key).upper() or word.upper() in str(value).upper():
+            value = value.replace(",", "").strip()
             ret = str(key) + ":" + value
+            pron = "["+Pronunciation.getIPA(key)+"]"
+            ret = ret + " " + pron
+            chars = Pronunciation.getWriting(key)
+            ret = ret + chars
             retArray.append(ret)
 
     if ret is "":

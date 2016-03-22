@@ -3,6 +3,7 @@ from flask import Flask, request, render_template
 
 import Dictionary
 import CommonPhrases
+import Pronunciation
 
 # import KlingonTranslator
 
@@ -25,6 +26,15 @@ def commonphrases():
         html += str(phrase)
         html += "</div>"
     return html
+
+
+@app.route('/pronunciation', methods=['POST', 'GET'])
+def getPronunciation():
+    ret = str(request.args['klingon'])
+    Pronunciation.loadpronunciationpatrix()
+    word = Pronunciation.getIPA(ret)
+    return word
+
 
 @app.route('/search', methods=['POST', 'GET'])
 def search():
