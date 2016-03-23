@@ -66,8 +66,8 @@ def lookup(query):
             ret = str(key) + ":" + value
             pron = "["+Pronunciation.getIPA(key)+"]"
             ret = ret + " " + pron
-            chars = Pronunciation.getWriting(key)
-            ret = ret + chars
+           # chars = Pronunciation.getWriting(key)
+           # ret = ret + chars
             retArray.append(ret)
 
     if ret is "":

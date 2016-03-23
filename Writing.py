@@ -4,4 +4,6 @@ __author__ = 'thorofasgaard'
 # Will need to create individual pngs for each letter
 
 def getLetter(letter):
+    if letter == "Q":
+        letter = "Qupper"
     return "./static/image/alphabet/"+letter+".png"
