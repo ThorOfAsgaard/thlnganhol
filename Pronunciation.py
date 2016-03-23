@@ -44,18 +44,32 @@ def getIPA(word):
         returnword = returnword.replace('ch', unicode(pronunciation_list.get('ch'), 'utf-8', 'replace'))
         word = word.replace('ch', '')
         print('replacing ch:' + word)
+    print(word)
+    word = word.strip()
     for char in str(word):
-        print(char)
+        print(returnword.index(char))
         newchar = pronunciation_list.get(char)
+
+        try:
+            if word.index(char) > -1 and images[word.index(char)] is 'None':
+                images[returnword.index(char)] = getWriting(char)
+        except ValueError:
+                print(returnword.index(char)) #substring not found
+                images[returnword.index(char)] = getWriting(char)
+                print("Can't find " + char)
+                pass
+        except IndexError:
+          #  print(returnword)
+            print(char)
+            print("Out of Range " + char)
+
         if newchar != None:
             returnword = returnword.replace(char, unicode(pronunciation_list.get(char), 'utf-8', 'replace'))
-        if returnword.index(char) > -1 and images[word.index(char)] is None or images[word.index(char)] is 'None':
-            images[returnword.index(char)] = getWriting(char)
-
-            # print(word.index(char))
-            #  images[word.index(char)] = getWriting(char)
     print(str(images))
-    return returnword + str(images)
+    imageString = ""
+    for string in images:
+        imageString = imageString + string
+    return returnword + imageString
 
 
 def getWriting(char):
