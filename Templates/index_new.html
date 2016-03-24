@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tlhlngan hol</title>
+    <link rel="stylesheet"
+          href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="/static/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css"/>
+
+
+    <link rel="stylesheet" href="/static/bower_components/bootstrap-material-design/dist/css/ripples.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Voces' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="/static/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script type="text/javascript"
+            src="/static/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+
+    <script>
+
+
+$(function() {
+$("#searchQuery").on('keyup', function() {
+        if($(this).val().length > 1) {
+
+        $.get('/search', {query: $(this).val()}, function(ret) {
+        $("#result").html(ret);
+         $("#synonyms").html("<div class='alert alert-info'>Waiting</div>");
+
+                $.get('/synonyms', {'query': $("#searchQuery").val()}, function(ret) {
+                    $("#synonyms").html(ret);
+                });
+        });
+        }
+});
+$(".common-phrases").on('click', function() {
+        $.get('/common-phrases', function(ret) {
+        $("#result").html(ret)
+        });
+});
+$(".synonyms").on('click', function (){
+        $("#synonyms").html("<div class='alert alert-info'>Waiting</div>");
+
+        $.get('/synonyms', {'query': $("#searchQuery").val()}, function(ret) {
+                $("#synonyms").html(ret);
+        });
+
+});
+});
+
+
+
+
+
+
+    </script>
+    <style>
+        {font-family: "lucida sanss unicode";}
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron center-block" style="background: #000">
+        <div class="">
+            <image class="img-responsive center-block" src="static/image/Klingon_Empire_logo.png"></image>
+            <h1 class="text-danger text-center">De'wl' thlhingan hol yI'el!</h1>
+
+        </div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="#dictionary" role="tab" data-toggle="tab" aria-controls="dictionary">Dictionary</a>
+            </li>
+            <li><a href="#translate" aria-controls="translate" role="tab" data-toggle="tab">Translate</a></li>
+            <li><a href="#pronunciation" aria-controls="pronunciation" role="tab" data-toggle="tab">Pronunciation</a></li>
+            <li><a href="#grammar" aria-controls="grammar" role="tab" data-toggle="tab">Grammar</a></li>
+
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="dictionary">
+                <div class="btn-bar btn-bar-sm">
+                    <button class="btn btn-default btn-raised common-phrases">ja'tah'mey (Sayings)</button>
+                </div>
+                <form-group>
+                    <label>
+                        yu' vItlhobnIS:
+                        <input type="text" class="form-control" id="searchQuery" placeholder="question, you must ask!">
+                    </label>
+                </form-group>
+                <h3>Result</h3>
+                <div class="well" id="result"></div>
+                <h3>Synonyms</h3>
+                <div class="well" id="synonyms"></div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="translate">
+                asdfasdf
+            </div>
+            <div role="tabpanel" class="tab-pane" id="pronunciation">
+                asdfasdf
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="grammar">
+                asdfasdf
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>

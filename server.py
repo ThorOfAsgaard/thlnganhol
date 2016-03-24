@@ -1,8 +1,8 @@
 __author__ = 'thor'
 from flask import Flask, request, render_template
 
-import Dictionary
 import CommonPhrases
+import Dictionary
 import Pronunciation
 
 # import KlingonTranslator
@@ -13,7 +13,7 @@ app.debug = True
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index_new.html")
 
 
 @app.route('/common-phrases', methods=['POST', 'GET'])
@@ -45,17 +45,16 @@ def search():
     retHtml = ""
     for item in ret:
         retHtml += "<div class='well well-sm'>"
-        retHtml += str(item)
+        retHtml += "<font face='Voces cursive'>" + str(item) + "</font>"
         retHtml += "</div>"
 
     return retHtml
 
 
-
 @app.route('/synonyms', methods=['POST', 'GET'])
 def synonyms():
     ret = str(request.args['query'])
-    html = "";
+    html = ""
     synonyms = Dictionary.find_synonyms(ret)
     for syn in synonyms:
         html = html + "<li class='list-group-item'>" + str(syn) + "</li>"
