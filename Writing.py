@@ -12,4 +12,4 @@ def getLetter(letter):
         letter = "glottal"
     if letter == " ":
         return ""
-    return "./static/image/alphabet/" + letter.lower() + ".png"
+    return "<span class='icon-" + letter.lower() + "'></span>"

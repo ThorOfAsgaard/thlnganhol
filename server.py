@@ -45,7 +45,7 @@ def search():
     retHtml = ""
     for item in ret:
         retHtml += "<div class='well well-sm'>"
-        retHtml += "<font face='Voces cursive'>" + str(item) + "</font>"
+        retHtml += str(item)
         retHtml += "</div>"
 
     return retHtml
