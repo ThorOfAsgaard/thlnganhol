@@ -46,6 +46,16 @@ def find_synonyms(query):
     return list
 
 
+def returnword(word):
+    ret = ""
+    for key, value in dictionary.items():
+        if word.upper() in str(key).upper() or word.upper() in str(value).upper():
+            value = value.replace(",", "").strip()
+            ret = str(key) + ":" + value
+            print("ret:" + ret)
+    return ret
+
+
 def lookup(query):
     ## TODO: use nltk to find synonyms
     ret = ""

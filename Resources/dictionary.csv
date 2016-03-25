@@ -1,51 +1,51 @@
-laH,able
-qabqu'boghghach,abomination
-qabqu'boghghachmey,abominations
-Dung,above
-vang,act
-vangta',acted
-vangta'ghach,action
-vangta'ghachmey,actions
-ta'mey,acts
-chel,add
-chelta',added
-tar ghajbogh lung,adder
-tar ghajbogh lungmey,adders
-tar ghajbogh lungmey,adders'
-cheltaH,adds
-voqHa'moHwI',adulterer
-voqHa'moHwI'pu',adulterers
-be' voqHa'moH,adulteress
-be'pu' voqHa'moH,adulteresses
-voqHa'moHlu',adultery
-jaghpu',adversaries
-jagh,adversary
-vIp,afraid
-Daq,against
-ben,ago
-Qochbe'ghach,agreement
-toH,ah
-toH,aha
-roptaH,ails
-Qeq,aim
-yIn,alive
-Hoch,all
-HoSghaj,almighty
-mob,alone
-QoymoHlaHbogh,aloud
-je,also
-lalDanta' Daq,altar
-oH,am
-je,and
-Duy,angel
-Duy''a'pu',angels
-QeH,anger
-Ha'DIbaH,animals
-ngoHta',anointed
-jang,answer
-jangta',answered
-vay',any
-vay',anything
+laH,able (v)
+qabqu'boghghach,abomination (n)
+qabqu'boghghachmey,abominations (n)
+Dung,above (p)
+vang,act (v)
+vangta',acted (v)
+vangta'ghach,action (n)
+vangta'ghachmey,actions (n)
+ta'mey,acts (n)
+chel,add (v)
+chelta',added (v)
+tar ghajbogh lung,adder (n)
+tar ghajbogh lungmey,adders (n)
+tar ghajbogh lungmey,adders' (n)
+cheltaH,adds (v)
+voqHa'moHwI',adulterer (n)
+voqHa'moHwI'pu',adulterers (n)
+be' voqHa'moH,adulteress (n)
+be'pu' voqHa'moH,adulteresses (n)
+voqHa'moHlu',adultery (n)
+jaghpu',adversaries (n)
+jagh,adversary (n)
+vIp,afraid (adj)
+Daq,against (adj)
+ben,ago (t)
+Qochbe'ghach,agreement (n)
+toH,ah (int)
+toH,aha (int)
+roptaH,ails (v)
+Qeq,aim (v)
+yIn,alive (adj)
+Hoch,all (n)
+HoSghaj,almighty (adj)
+mob,alone (adj)
+QoymoHlaHbogh,aloud (adj)
+je,also (conj)
+lalDanta' Daq,altar (n)
+oH,am (v)
+je,and (conj)
+Duy,angel (n)
+Duy''a'pu',angels (n)
+QeH,anger (n) (v)
+Ha'DIbaH,animals (n)
+ngoHta',anointed (n)
+jang,answer (v)
+jangta',answered (v)
+vay',any (adj)
+vay',anything (adj)
 mob,apart
 nargh,appear
 wIv,appointed
@@ -1054,7 +1054,7 @@ Qup,young
 lIj,your
 SoH'egh,yourself
 tlhIH'egh,yourselves
-bach,shoot shot
+bach,shoot shot (v)
 baH, gun
 baHwI',gunner
 bang,love,one who is loved,beloved
