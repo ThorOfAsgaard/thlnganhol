@@ -24,24 +24,21 @@ def loadpronunciationpatrix():
 
 # Eventually will return the IPA equivalents
 
-def getIPA(word):
-    syllabry = ['tlh', 'ng', 'ch', 'gh', 'a', 'b', 'D', 'e', 'gh', 'H', 'I', 'j', 'l', 'm', 'n', 'ng', 'o', 'p', 'q', 'Q', 'r', 'S', 't', 'u', 'v', 'w', 'y', '\'']
-    returnword = GrowingList()
-    while len(word) > 1:
+def getklingon(word):
+    syllabry = ['tlh', 'ng', 'ch', 'gh', 'a', 'b', 'D', 'e', 'gh', 'H', 'I', 'j', 'l', 'm', 'n', 'ng', 'o', 'p', 'q',
+                'Q', 'r', 'S', 't', 'u', 'v', 'w', 'y', '\'']
+    returnword = []
 
+    glyphmap = ""
+    charmap = ""
+    for char in word:
+        charmap += char
         for x in syllabry:
-            if word.find(x) > -1:
-                returnword.append(getWriting(x))
-                word = word.replace(x, '')
-                print(len(word))
+            if charmap == x:
+                glyphmap += getWriting(charmap)
+                charmap = ""
+    return "<h2>" +glyphmap +"</h2>"
 
-    ret = ""
-    returnword.reverse()
-    for x in returnword:
-        print(x)
-        ret = x + ret
-    ret = "<h1>" + ret + "</h1>"
-    return ret
 
 def getLetter(letter):
     ret = pronunciation_list.get(letter)
@@ -58,5 +55,5 @@ def getWriting(char):
     ret = ""
     # for char in str(word):
     ret += Writing.getLetter(char)
- #  print(ret)
+    #  print(ret)
     return ret

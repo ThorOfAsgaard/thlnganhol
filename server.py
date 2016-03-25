@@ -32,7 +32,7 @@ def commonphrases():
 def getPronunciation():
     ret = str(request.args['klingon'])
     Pronunciation.loadpronunciationpatrix()
-    word = Pronunciation.getIPA(ret)
+    word = Pronunciation.getklingon(ret)
     return word
 
 

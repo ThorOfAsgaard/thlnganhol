@@ -64,7 +64,7 @@ def lookup(query):
         if word.upper() in str(key).upper() or word.upper() in str(value).upper():
             value = value.replace(",", "").strip()
             ret = str(key) + ":" + value
-            pron = "<font face='ipa'>" + Pronunciation.getIPA(key) + "</font>"
+            pron = "" + Pronunciation.getklingon(key) + ""
             ret = ret + " " + pron
             # chars = Pronunciation.getWriting(key)
             # ret = ret + chars
