@@ -34,11 +34,13 @@ def getIPA(word):
                 returnword.append(getWriting(x))
                 word = word.replace(x, '')
                 print(len(word))
-    ret = "<h1>"
+
+    ret = ""
+    returnword.reverse()
     for x in returnword:
         print(x)
-        ret += x
-    ret +="</h1>"
+        ret = x + ret
+    ret = "<h1>" + ret + "</h1>"
     return ret
 
 def getLetter(letter):
