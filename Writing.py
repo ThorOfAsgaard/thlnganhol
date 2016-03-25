@@ -12,4 +12,4 @@ def getLetter(letter):
         letter = "glottal"
     if letter == " ":
         return ""
-    return "<span class='icon-" + letter.lower() + "'></span>"
+    return "<span class='icon-" + letter + "' title='"+letter+"'></span>"
