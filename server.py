@@ -13,7 +13,7 @@ app.debug = True
 
 @app.route("/")
 def index():
-    return render_template("index_new.html")
+    return render_template("index.html")
 
 
 @app.route('/common-phrases', methods=['POST', 'GET'])
