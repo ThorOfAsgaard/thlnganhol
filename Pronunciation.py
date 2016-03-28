@@ -25,19 +25,37 @@ def loadpronunciationpatrix():
 # Eventually will return the IPA equivalents
 
 def getklingon(word):
-    syllabry = ['tlh', 'ng', 'ch', 'gh', 'a', 'b', 'D', 'e', 'gh', 'H', 'I', 'j', 'l', 'm', 'n', 'ng', 'o', 'p', 'q',
+    simple = ['a', 'b', 'D', 'e', 'gh', 'H', 'I', 'j', 'l', 'm', 'n', 'ng', 'o', 'p', 'q',
                 'Q', 'r', 'S', 't', 'u', 'v', 'w', 'y', '\'']
+    complex = ['tlh', 'ng', 'ch', 'gh']
     returnword = []
 
     glyphmap = ""
     charmap = ""
     for char in word:
         charmap += char
-        for x in syllabry:
-            if charmap == x:
-                glyphmap += getWriting(charmap)
-                charmap = ""
-    return "<h2>" +glyphmap +"</h2>"
+
+        for y in complex:
+            cunt = True
+            if y.find(charmap) > -1 and cunt:
+                print("nookin fo:" + charmap)
+                if y == charmap:
+                    print("got:" + charmap)
+                    glyphmap += getWriting(charmap)
+                    cunt = False
+                else:
+                    print("Advancing")
+                    break
+
+            else:
+                print("searching basic syllabry")
+                for x in simple:
+                    if charmap == x:
+                        print("Found in basic:" + x)
+                        glyphmap += getWriting(charmap)
+                        charmap = ""
+
+    return "<h2>" + glyphmap + "</h2>"
 
 
 def getLetter(letter):
