@@ -1,7 +1,5 @@
 from setuptools.compat import unicode
 
-from Classes.GrowingList import GrowingList
-
 __author__ = 'thorofasgaard'
 
 import FileHandler
@@ -26,34 +24,59 @@ def loadpronunciationpatrix():
 
 def getklingon(word):
     simple = ['a', 'b', 'D', 'e', 'gh', 'H', 'I', 'j', 'l', 'm', 'n', 'ng', 'o', 'p', 'q',
-                'Q', 'r', 'S', 't', 'u', 'v', 'w', 'y', '\'']
+              'Q', 'r', 'S', 't', 'u', 'v', 'w', 'y', '\'']
     complex = ['tlh', 'ng', 'ch', 'gh']
     returnword = []
 
     glyphmap = ""
-    charmap = ""
-    for char in word:
-        charmap += char
+    charmap = []
 
-        for y in complex:
-            cunt = True
-            if y.find(charmap) > -1 and cunt:
-                print("nookin fo:" + charmap)
-                if y == charmap:
-                    print("got:" + charmap)
-                    glyphmap += getWriting(charmap)
-                    cunt = False
-                else:
-                    print("Advancing")
-                    break
+    found = ""
+    for x in word:
 
+        # Todo: iterate over every character, but checking 'complex' first
+        # adding word[x+y] until nomore matches found
+        # charmap.append(x)
+        found = ""
+        for seq in complex:
+            y = 0
+            if seq.find(x):
+                found = x
+                while True and y + word.index(x) < len(word):
+
+                    found = found + word[y]
+                    print(found)
+                    if not seq.find(found):
+                        charmap.append(found)
+                        print("advancing")
+                        break
+                    y += 1
+                    #else:
+
+                    #    break
+                # get index of x
+
+#                print("Got:" + "".join(charmap))
+#                found = "".join(charmap)
+#                glyphmap += getWriting("".join(charmap))
+                charmap = []
+                # found = True
+                continue
             else:
-                print("searching basic syllabry")
-                for x in simple:
-                    if charmap == x:
-                        print("Found in basic:" + x)
-                        glyphmap += getWriting(charmap)
-                        charmap = ""
+                found = ""
+                continue
+                # else:
+                #     print("checking simple")
+                #     for seq in simple:
+                #         if "".join(charmap) == seq:
+                #             glyphmap +=getWriting(seq)
+                #             charmap = []
+                #             continue
+        if found == "":
+            for seq in simple:
+                if "".join(charmap) == seq:
+                    glyphmap += getWriting(seq)
+                    charmap = []
 
     return "<h2>" + glyphmap + "</h2>"
 
