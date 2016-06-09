@@ -26,6 +26,7 @@ def getklingon(word):
     simple = ['a', 'b', 'D', 'e', 'gh', 'H', 'I', 'j', 'l', 'm', 'n', 'ng', 'o', 'p', 'q',
               'Q', 'r', 'S', 't', 'u', 'v', 'w', 'y', '\'']
     complex = ['tlh', 'ng', 'ch', 'gh']
+    complex_replacements = ['11111111', '22222222', '33333333', '44444444']
     returnword = []
 
     glyphmap = ""
