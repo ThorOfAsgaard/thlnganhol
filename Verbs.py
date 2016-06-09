@@ -2,7 +2,7 @@ import FileHandler
 import nltk
 __author__ = 'thor'
 import Dictionary
-
+import Grammar
 suffixes = {}
 modals = {}
 person = {}
@@ -72,7 +72,10 @@ def translate():
     sentence = input("Enter your sentence and watch crazy things happen:")
     tokens = nltk.word_tokenize(sentence)
     tagged = nltk.pos_tag(tokens)
-    print(str(tagged))
+    print(type(tagged))
+    print("Tagged:" + str(tagged))
+    Grammar.wordorder(tagged,sentence)
+    ##TODO: use tagged to build a grammar
 
 def print_menu():
     print("(C)onjugate a verb")
