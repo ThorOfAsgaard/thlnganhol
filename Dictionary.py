@@ -123,7 +123,7 @@ def lookup(query):
     else:
         ret = word + ': ' + str(ret)
 
-    print(retArray)
+    # print(retArray)
     return retArray
 
     # lookup()

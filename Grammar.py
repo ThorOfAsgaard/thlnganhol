@@ -1,8 +1,9 @@
 __author__ = 'ntallmon'
 
 import nltk
-import NLTK_Functions
+
 import Dictionary
+
 # See: http://www.nltk.org/book/ch08.html#ex-elephant
 # Grammar rules for Kilngon translation
 # https://en.wikipedia.org/wiki/Klingon_grammar
@@ -10,6 +11,7 @@ import Dictionary
 grammarList = {'S': ['NP', 'VP'], 'VP': [['V', 'NP'], ['V' 'NP', 'PP']], 'PP': ['P', 'NP'], 'V': [],
                'NP': ['Det', 'N', 'PP'], 'Det': [], 'N': [], 'P': []}
 
+# This will definitely need to be revised
 klingonGrammar = {'S': [['VP', 'NP'], ['NP', 'VP', 'NP']], 'VP': [['NP', 'V'], ['NP', 'PP', 'VP']], 'PP': ['P', 'NP'],
                   'NP': ['Det', 'N', 'PP'], 'V': [],
                   'N': [], 'P': [], 'Det': []}
@@ -24,8 +26,30 @@ det = {'DT'}
 pronouns = {'JJ', 'PRP'}
 
 
-def basic_gloss(sentence):
-    print("something")
+# create/print a tree based off of the grammar
+def print_tree(grammar,sentence):
+    tokens =  nltk.word_tokenize(sentence)
+    acceptableSentences = ' | '.join(grammar['S'])
+    nouns = ' | '.join(grammar['N'])
+    verbs = ' | '.join(grammar['V'])
+
+
+    # todo: format like the groucho grammar
+    newGrammar = """
+  S -> """ + acceptableSentences + """
+  VP -> V NP | V NP PP
+  PP -> P NP
+  V -> """+verbs+""" | VBZ
+  NP -> "John" | "Mary" | "Bob" | Det N | Det N PP | NN
+  Det -> "a" | "an" | "the" | "my" | DT
+  N -> """+nouns+"""
+  P -> "in" | "on" | "by" | "with"
+  """
+
+    parser = nltk.ChartParser(newGrammar)
+    for tree in parser.parse(tokens):
+        print(tree)
+    #print(newGrammar)
 
 
 # This will basically take the words assigned in the input grammar, map them to the target grammar in the right places
@@ -71,6 +95,7 @@ def wordorder(tokens, sentence):
     :param sentence:
     """
     global nouns, grammarList, klingonGrammar
+    print(tokens)
     englishGrammar1 = nltk.CFG.fromstring("""
   S -> NP VP
   VP -> V NP | V NP PP
@@ -99,3 +124,4 @@ def wordorder(tokens, sentence):
     # print(grammarList)
     buildNewGrammar()
     substituteWords()
+    print_tree(grammarList, sentence)
