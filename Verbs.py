@@ -10,7 +10,7 @@ imperitive = {}
 
 
 def loadfiles():
-    Dictionary.loadDictionary('klingon')
+    Dictionary.loadDictionary('dictionary')
     global suffixes, modals, person, imperitive
 
     file = FileHandler.loadFile("Resources/person.csv", "r")
@@ -74,8 +74,7 @@ def translate():
     tagged = nltk.pos_tag(tokens)
     print(type(tagged))
     print("Tagged:" + str(tagged))
-    Grammar.wordorder(tagged,sentence)
-    ##TODO: use tagged to build a grammar
+    Grammar.wordorder(tagged, sentence)
 
 def print_menu():
     print("(C)onjugate a verb")

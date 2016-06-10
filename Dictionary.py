@@ -1,7 +1,7 @@
 from nltk.corpus import wordnet
 
 import FileHandler
-import Pronunciation
+import NLTK_Functions
 
 __author__ = 'thorofasgaard'
 
@@ -10,7 +10,20 @@ translation = {}
 mode = ""
 
 
+## dictionary.csv = Klingon/English
+
+def tag_part_of_speech(line):
+    return NLTK_Functions.get_parts_of_speech(line)
+
+    ##TODO - grab part of speech for English translation, if possible
+
+
 def loadDictionary(language):
+    """
+
+    :param language:
+    :return:
+    """
     global mode
     mode = language
     file = FileHandler.loadFile("Resources/" + language + ".csv", "r")
@@ -21,9 +34,8 @@ def loadDictionary(language):
             continue
         value = ""
         for i in range(1, len(vals)):
-            if vals[i].strip() != '':
+            if vals[i].strip() != '' and vals[i] is not None:
                 value += vals[i].strip() + " ,"
-
         ret = {vals[0].strip(): value.strip()}
         dictionary.update(ret)
 
@@ -46,13 +58,38 @@ def find_synonyms(query):
     return list
 
 
+def returnEnglish(klingon):
+    """
+
+    :param klingon:
+    :return:
+    """
+    for key, value in dictionary.items():
+        if klingon.upper() in str(key).upper():
+            value = value.replace(",", "").strip()
+            return value
+
+
+def returnKlingon(english):
+    """
+
+
+    :rtype : string
+    :param english:
+    :return:
+    """
+    for key, value in dictionary.items():
+        if english.upper() in str(value).upper():
+            key = key.replace(",", "").strip()
+            return key
+
+
 def returnword(word):
     ret = ""
     for key, value in dictionary.items():
         if word.upper() in str(key).upper() or word.upper() in str(value).upper():
             value = value.replace(",", "").strip()
             ret = str(key) + ":" + value
-            print("ret:" + ret)
     return ret
 
 
@@ -69,13 +106,13 @@ def lookup(query):
     # keys = dictionary.keys()
 
     retArray = []
-    Pronunciation.loadpronunciationpatrix()
+    # Pronunciation.loadpronunciationpatrix()
     for key, value in dictionary.items():
         if word.upper() in str(key).upper() or word.upper() in str(value).upper():
             value = value.replace(",", "").strip()
             ret = str(key) + ":" + value
-            pron = "" + Pronunciation.getklingon(key) + ""
-            ret = ret + " " + pron
+            #       pron = "" + Pronunciation.getklingon(key) + ""
+            #      ret = ret + " " + pron
             # chars = Pronunciation.getWriting(key)
             # ret = ret + chars
             retArray.append(ret)
@@ -86,6 +123,7 @@ def lookup(query):
     else:
         ret = word + ': ' + str(ret)
 
+    print(retArray)
     return retArray
 
     # lookup()

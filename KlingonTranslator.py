@@ -19,6 +19,8 @@ def print_menu():
     choice = input("Select an option from above:")
     if choice.upper() == 'P':
         print("FOO")
+    elif choice.upper() == "T":
+        print("Foo")
     elif choice.upper() == 'F':
         Flashcard.loaddeck(20)
     elif choice.upper() == 'D':
