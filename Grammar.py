@@ -8,48 +8,70 @@ import Dictionary
 # Grammar rules for Kilngon translation
 # https://en.wikipedia.org/wiki/Klingon_grammar
 
-grammarList = {'S': ['NP', 'VP'], 'VP': [['V', 'NP'], ['V' 'NP', 'PP']], 'PP': ['P', 'NP'], 'V': [],
+
+possibleGrammar = """
+  S  -> NP VP
+  NP -> Det Nom | PropN
+  Nom -> Adj Nom | N
+  VP -> V Adj | V NP | V S | V NP PP
+  PP -> P NP
+  PropN -> 'Buster' | 'Chatterer' | 'Joe'
+  Det -> 'the' | 'a'
+  N -> 'bear' | 'squirrel' | 'tree' | 'fish' | 'log'
+  Adj  -> 'angry' | 'frightened' |  'little' | 'tall'
+  V ->  'chased'  | 'saw' | 'said' | 'thought' | 'was' | 'put'
+  P -> 'on'
+  """
+grammarList = {'S': ['NP VP'], 'VP': [['V', 'NP'], ['V' 'NP', 'PP']], 'PP': ['P', 'NP'], 'V': [],
                'NP': ['Det', 'N', 'PP'], 'Det': [], 'N': [], 'P': []}
 
 # This will definitely need to be revised
-klingonGrammar = {'S': [['VP', 'NP'], ['NP', 'VP', 'NP']], 'VP': [['NP', 'V'], ['NP', 'PP', 'VP']], 'PP': ['P', 'NP'],
+klingonGrammar = {'S': [['VP NP'], ['NP VP NP']], 'VP': [['NP', 'V'], ['NP', 'PP', 'VP']], 'PP': ['P', 'NP'],
                   'NP': ['Det', 'N', 'PP'], 'V': [],
                   'N': [], 'P': [], 'Det': []}
 
 sentenceOrder = []
 nouns = {'NNP', 'NN', 'NNS'}
-verbs = {'VBZ', 'VB', 'VBP'}
+verbs = {'VBZ', 'VB', 'VBP', 'VBG'}
 questionWords = {'WP'}
-adjectives = {'RP'}
+adjectives = {'RP', 'RB'}
 preposition = {'IN'}
 det = {'DT'}
-pronouns = {'JJ', 'PRP'}
+pronouns = {'JJ', 'PRP', 'PRP$'}
 
 
 # create/print a tree based off of the grammar
-def print_tree(grammar,sentence):
-    tokens =  nltk.word_tokenize(sentence)
+def print_tree(grammar, sentence):
+    """
+
+    :param grammar: which grammar structure to base the replacements off of
+    :param sentence: string that will be tokenized to parse
+    """
+    print("----Printing Tree for:" + sentence + "----")
+    tokens = nltk.word_tokenize(sentence)
     acceptableSentences = ' | '.join(grammar['S'])
     nouns = ' | '.join(grammar['N'])
     verbs = ' | '.join(grammar['V'])
-
+    dets = ' | '.join(grammar['Det'])
+    preps = ' | '.join(grammar['P'])
 
     # todo: format like the groucho grammar
     newGrammar = """
   S -> """ + acceptableSentences + """
   VP -> V NP | V NP PP
   PP -> P NP
-  V -> """+verbs+""" | VBZ
-  NP -> "John" | "Mary" | "Bob" | Det N | Det N PP | NN
-  Det -> "a" | "an" | "the" | "my" | DT
-  N -> """+nouns+"""
-  P -> "in" | "on" | "by" | "with"
+  V -> """ + verbs + """
+  NP -> Det N | Det N PP
+  Det -> """ + dets + """
+  N -> """ + nouns + """
+  P -> """+preps+"""
   """
-
-    parser = nltk.ChartParser(newGrammar)
+    print(newGrammar)
+    gram = nltk.CFG.fromstring(newGrammar)
+    parser = nltk.ChartParser(gram)
     for tree in parser.parse(tokens):
         print(tree)
-    #print(newGrammar)
+        # print(newGrammar)
 
 
 # This will basically take the words assigned in the input grammar, map them to the target grammar in the right places
@@ -101,7 +123,7 @@ def wordorder(tokens, sentence):
   VP -> V NP | V NP PP
   PP -> P NP
   V -> "saw" | "ate" | "walked" | is | VBZ
-  NP -> "John" | "Mary" | "Bob" | Det N | Det N PP | NN
+  NP -> "John" | "Mary" | "Bob" | Det N | Det N PP | NN | N
   Det -> "a" | "an" | "the" | "my" | DT
   N -> "man" | "dog" | "cat" | "telescope" | "park"
   P -> "in" | "on" | "by" | "with"
@@ -111,17 +133,17 @@ def wordorder(tokens, sentence):
     # sentence = sentence.split()
     for x in tokens:
         if any(x[1] in n for n in nouns):
-            grammarList['N'].append(x[0])
+            grammarList['N'].append("\"" + x[0] + "\"")
         if any(x[1] in v for v in verbs):
-            grammarList['V'].append(x[0])
+            grammarList['V'].append("\"" + x[0] + "\"")
         if any(x[1] in d for d in det):
-            grammarList['Det'].append(x[0])
+            grammarList['Det'].append("\"" + x[0] + "\"")
         if any(x[1] in p for p in pronouns):
-            grammarList['N'].append(x[0])
+            grammarList['N'].append("\"" + x[0]+ "\"")
 
     # for tree in rd_parser.parse(sentence):
     #    print(tree)
-    # print(grammarList)
-    buildNewGrammar()
-    substituteWords()
+    print(grammarList)
+    #  buildNewGrammar()
+    #  substituteWords()
     print_tree(grammarList, sentence)
