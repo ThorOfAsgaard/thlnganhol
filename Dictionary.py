@@ -191,10 +191,10 @@ def update_definitions():
         values = value.split(",")
         list = []
         for val in values:
-            if val is None:
+            if val.strip() is None:
                 return
             synonyms = wordnet.synsets(val.strip())
-            if synonyms is not None:
+            if synonyms is not None and val is not None:
                 print("#grabbing the definition for  " + val)
                 for syn in synonyms:
                     definition = syn.definition()
