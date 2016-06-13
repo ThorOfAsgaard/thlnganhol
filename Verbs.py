@@ -1,5 +1,7 @@
 import FileHandler
 import nltk
+import Translator
+
 __author__ = 'thor'
 import Dictionary
 import Grammar
@@ -68,17 +70,9 @@ def conjugatetable():
     print('3rd Plural:' + firstsing[6] + word[0] + " -- You  " + word[1] + " Them")
     return ret
 
-def translate():
-    sentence = input("Enter your sentence and watch crazy things happen:")
-    tokens = nltk.word_tokenize(sentence)
-    tagged = nltk.pos_tag(tokens)
-    print(type(tagged))
-    print("Tagged:" + str(tagged))
-    Grammar.wordorder(tagged, sentence)
-
 def print_menu():
     print("(C)onjugate a verb")
-    print("(T)ranslate a sentence")
+    #print("(T)ranslate a sentence")
     print("(Q)uit")
     choice = input("?")
     if choice.upper() == "Q":
@@ -86,14 +80,14 @@ def print_menu():
     if choice.upper() == "C":
         conjugatetable()
     if choice.upper() == "T":
-        translate()
+        Translator.translate(None)
 
 def main():
     print("yI'el!")
     print_menu()
 
 loadfiles()
-main()
-
-if __name__ == "__main__":
-    main()
+# main()
+#
+# if __name__ == "__main__":
+#     main()

@@ -5,11 +5,14 @@ import CommonPhrases
 import Dictionary
 import Pronunciation
 
+
+import configuration
+
 # import KlingonTranslator
 
 app = Flask(__name__)
 app.debug = True
-
+configuration.server = True
 
 @app.route("/")
 def index():
@@ -40,6 +43,7 @@ def getPronunciation():
 def search():
     ret = str(request.args['query'])
     Dictionary.loadDictionary('dictionary')
+    Dictionary.server = True
     # retString = LoadDictionary.lookup(ret)
     ret = Dictionary.lookup(ret)
     retHtml = ""
@@ -58,7 +62,7 @@ def synonyms():
     synonyms = Dictionary.find_synonyms(ret)
     for syn in synonyms:
         html = html + "<li class='list-group-item'>" + str(syn) + "</li>"
-
+        print(syn)
     return html
 
 

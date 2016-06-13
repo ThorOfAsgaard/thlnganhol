@@ -1,6 +1,7 @@
 import Dictionary
 import CommonPhrases
 import Flashcard
+import Translator
 
 __author__ = 'thorofasgaard'
 # A little program to translate and learn Klingon (tlhlngan Hol)
@@ -20,7 +21,7 @@ def print_menu():
     if choice.upper() == 'P':
         print("FOO")
     elif choice.upper() == "T":
-        print("Foo")
+        Translator.translate(None)
     elif choice.upper() == 'F':
         Flashcard.loaddeck(20)
     elif choice.upper() == 'D':

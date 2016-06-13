@@ -23,21 +23,21 @@ possibleGrammar = """
   P -> 'on'
   """
 grammarList = {'S': ['NP VP'], 'VP': [['V', 'NP'], ['V' 'NP', 'PP']], 'PP': ['P', 'NP'], 'V': [],
-               'NP': ['Det', 'N', 'PP'], 'Det': [], 'N': [], 'P': []}
+               'NP': ['Det', 'N', 'PP'], 'Det': [], 'N': [], 'P': [], 'Adj': []}
 
 # This will definitely need to be revised
 klingonGrammar = {'S': [['VP NP'], ['NP VP NP']], 'VP': [['NP', 'V'], ['NP', 'PP', 'VP']], 'PP': ['P', 'NP'],
                   'NP': ['Det', 'N', 'PP'], 'V': [],
-                  'N': [], 'P': [], 'Det': []}
+                  'N': [], 'P': [], 'Det': [], 'Adj': []}
 
 sentenceOrder = []
 nouns = {'NNP', 'NN', 'NNS'}
 verbs = {'VBZ', 'VB', 'VBP', 'VBG'}
 questionWords = {'WP'}
-adjectives = {'RP', 'RB'}
+adjectives = {'RP', 'RB', 'JJ'}
 preposition = {'IN'}
 det = {'DT'}
-pronouns = {'JJ', 'PRP', 'PRP$'}
+pronouns = {'PRP', 'PRP$'}
 
 
 # create/print a tree based off of the grammar
@@ -54,6 +54,7 @@ def print_tree(grammar, sentence):
     verbs = ' | '.join(grammar['V'])
     dets = ' | '.join(grammar['Det'])
     preps = ' | '.join(grammar['P'])
+    adj = ' | '.join(grammar['Adj'])
 
     # todo: format like the groucho grammar
     newGrammar = """
@@ -64,14 +65,15 @@ def print_tree(grammar, sentence):
   NP -> Det N | Det N PP
   Det -> """ + dets + """
   N -> """ + nouns + """
-  P -> """+preps+"""
+  P -> """ + preps + """
+  Adj -> """ + adj + """
   """
     print(newGrammar)
     gram = nltk.CFG.fromstring(newGrammar)
     parser = nltk.ChartParser(gram)
     for tree in parser.parse(tokens):
         print(tree)
-        # print(newGrammar)
+        print(newGrammar)
 
 
 # This will basically take the words assigned in the input grammar, map them to the target grammar in the right places
@@ -81,6 +83,7 @@ def buildNewGrammar():
     klingonGrammar['V'] = grammarList['V']
     klingonGrammar['P'] = grammarList['P']
     klingonGrammar['Det'] = grammarList['Det']
+    klingonGrammar['Adj'] = grammarList['Adj']
 
 
 def substituteWords():
@@ -88,23 +91,28 @@ def substituteWords():
     for noun in klingonGrammar['N']:
         ret = Dictionary.returnKlingon(noun)
         if ret is not None:
-            klingonGrammar['N'].append(ret)
+            klingonGrammar['N'].append("\"" + ret + "\"")
             klingonGrammar['N'].remove(noun)
     for verb in klingonGrammar['V']:
         ret = Dictionary.returnKlingon(verb)
         if ret is not None:
-            klingonGrammar['V'].append(ret)
+            klingonGrammar['V'].append("\"" + ret + "\"")
             klingonGrammar['V'].remove(verb)
     for prep in klingonGrammar['P']:
         ret = Dictionary.returnKlingon(prep)
         if ret is not None:
-            klingonGrammar['P'].append(ret)
+            klingonGrammar['P'].append("\"" + ret + "\"")
             klingonGrammar['P'].remove(prep)
     for DET in klingonGrammar['Det']:
         ret = Dictionary.returnKlingon(DET)
         if ret is not None:
-            klingonGrammar['Det'].append(ret)
+            klingonGrammar['Det'].append("\"" + ret + "\"")
             klingonGrammar['Det'].remove(DET)
+    for ADJ in klingonGrammar['Adj']:
+        ret = Dictionary.returnKlingon(ADJ)
+        if ret is not None:
+            klingonGrammar['Adj'].append("\"" + ret + "\"")
+            klingonGrammar['Adj'].remove(ADJ)
 
     print("Klingon Grammar:" + str(klingonGrammar))
 
@@ -133,17 +141,19 @@ def wordorder(tokens, sentence):
     # sentence = sentence.split()
     for x in tokens:
         if any(x[1] in n for n in nouns):
-            grammarList['N'].append("\"" + x[0] + "\"")
+            grammarList['N'].append(x[0])
         if any(x[1] in v for v in verbs):
-            grammarList['V'].append("\"" + x[0] + "\"")
+            grammarList['V'].append(x[0])
         if any(x[1] in d for d in det):
-            grammarList['Det'].append("\"" + x[0] + "\"")
+            grammarList['Det'].append(x[0])
         if any(x[1] in p for p in pronouns):
-            grammarList['N'].append("\"" + x[0]+ "\"")
+            grammarList['N'].append(x[0])
+        if any(x[1] in a for a in adjectives):
+            grammarList['Adj'].append(x[0])
 
     # for tree in rd_parser.parse(sentence):
     #    print(tree)
     print(grammarList)
-    #  buildNewGrammar()
-    #  substituteWords()
-    print_tree(grammarList, sentence)
+    buildNewGrammar()
+    substituteWords()
+  #  print_tree(grammarList, sentence)
