@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 
 import CommonPhrases
 import Dictionary
-import Pronunciation
+import Pronunciation as p
 
 
 import configuration
@@ -34,8 +34,8 @@ def commonphrases():
 @app.route('/pronunciation', methods=['POST', 'GET'])
 def getPronunciation():
     ret = str(request.args['klingon'])
-    Pronunciation.loadpronunciationpatrix()
-    word = Pronunciation.getklingon(ret)
+    p.loadpronunciationpatrix()
+    word = p.getklingon(ret)
     return word
 
 
@@ -50,6 +50,7 @@ def search():
     for item in ret:
         retHtml += "<div class='well well-sm'>"
         retHtml += str(item)
+
         retHtml += "</div>"
 
     return retHtml

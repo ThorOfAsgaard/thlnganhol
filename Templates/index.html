@@ -143,6 +143,7 @@ $("#searchQuery").on('keyup', function() {
 
         $.get('/search', {query: $(this).val()}, function(ret) {
         $("#result").html(ret);
+
          $("#synonyms").html("<div class='alert alert-info'>Waiting</div>");
 
                 $.get('/synonyms', {'query': $("#searchQuery").val()}, function(ret) {

@@ -2,10 +2,13 @@ from nltk.corpus import wordnet
 
 import FileHandler
 import NLTK_Functions
+import Pronunciation as p
+import threading
 
 __author__ = 'thorofasgaard'
 
 dictionary = {}
+complete_dictionary = {}
 translation = {}
 server = False  # global flag to indicate whether or not to use__main__ and print menus
 mode = ""
@@ -40,7 +43,7 @@ def loadDictionary(language):
         ret = {vals[0].strip(): value.strip()}
         dictionary.update(ret)
 
-    print("**************** Dictionary Loaded ****************")
+    print("**************** Dictionary File Loaded ****************")
     return dictionary
 
 
@@ -84,6 +87,8 @@ def returnEnglish(klingon):
         if klingon.upper() in str(key).upper():
             value = value.replace(",", "").strip()
             return value
+    if not server:
+        returnEnglish(None)
 
 
 def returnKlingon(english):
@@ -105,6 +110,8 @@ def returnKlingon(english):
             word = key.replace(",", "").strip()
             print(word)
             return word
+    if not server:
+        returnKlingon(None)
 
 
 def returnword(word):
@@ -117,7 +124,7 @@ def returnword(word):
 
 
 def lookup(query):
-    global server
+    global server, complete_dictionary
     ## TODO: use nltk to find synonyms
     ret = ""
     if query is None:
@@ -143,7 +150,10 @@ def lookup(query):
             #      ret = ret + " " + pron
             # chars = Pronunciation.getWriting(key)
             # ret = ret + chars
+            print("Found a match, getting definition for " + key + ":" + str(complete_dictionary.get(key)))
             retArray.append(ret)
+            if server:
+                retArray.append(str(p.getklingon(key)))
 
     if ret is "" or ret is None:
         ret = 'Unable to find "' + word + '" in the dictionary'
@@ -151,6 +161,7 @@ def lookup(query):
         ret = word + ': ' + str(ret)
 
     print(retArray)
+
     if not server:
         lookup(None)
     return retArray
@@ -186,6 +197,8 @@ def main():
 
 
 def update_definitions():
+    global complete_dictionary
+    print("**************** Grabbing Definitions from Wordnet ****************")
     for key, value in dictionary.items():
         definitions = []
         values = value.split(",")
@@ -194,12 +207,14 @@ def update_definitions():
             if val.strip() is None:
                 return
             synonyms = wordnet.synsets(val.strip())
-            if synonyms is not None and val is not None:
-                print("#grabbing the definition for  " + val)
+            if synonyms is not None and val.strip() is not None:
+                # print("#grabbing the definition for  " + val)
                 for syn in synonyms:
                     definition = syn.definition()
-                    print("Defintion for " + val + ":" + definition)
+                    list.append(definition)
+                    # print("Defintion for " + val + ":" + definition)
 
+        complete_dictionary.update({key: list})
 
 if __name__ == "__main__":
     main()
