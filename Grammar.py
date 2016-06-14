@@ -5,7 +5,7 @@ import nltk
 import Dictionary
 
 # See: http://www.nltk.org/book/ch08.html#ex-elephant
-# Grammar rules for Kilngon translation
+# Grammar rules for Klingon translation
 # https://en.wikipedia.org/wiki/Klingon_grammar
 
 
@@ -79,6 +79,7 @@ def print_tree(grammar, sentence):
 # This will basically take the words assigned in the input grammar, map them to the target grammar in the right places
 def buildNewGrammar():
     global grammarList, klingonGrammar
+    print("---------Building new Grammar---------")
     klingonGrammar['N'] = grammarList['N']
     klingonGrammar['V'] = grammarList['V']
     klingonGrammar['P'] = grammarList['P']
@@ -88,7 +89,9 @@ def buildNewGrammar():
 
 def substituteWords():
     global klingonGrammar
+    print("---------Substituting Words---------")
     for noun in klingonGrammar['N']:
+        print(noun)
         ret = Dictionary.returnKlingon(noun)
         if ret is not None:
             klingonGrammar['N'].append("\"" + ret + "\"")
@@ -125,18 +128,6 @@ def wordorder(tokens, sentence):
     :param sentence:
     """
     global nouns, grammarList, klingonGrammar
-    print(tokens)
-    englishGrammar1 = nltk.CFG.fromstring("""
-  S -> NP VP
-  VP -> V NP | V NP PP
-  PP -> P NP
-  V -> "saw" | "ate" | "walked" | is | VBZ
-  NP -> "John" | "Mary" | "Bob" | Det N | Det N PP | NN | N
-  Det -> "a" | "an" | "the" | "my" | DT
-  N -> "man" | "dog" | "cat" | "telescope" | "park"
-  P -> "in" | "on" | "by" | "with"
-  """)
-
     # rd_parser = nltk.RecursiveDescentParser(englishGrammar1)
     # sentence = sentence.split()
     for x in tokens:
@@ -151,9 +142,7 @@ def wordorder(tokens, sentence):
         if any(x[1] in a for a in adjectives):
             grammarList['Adj'].append(x[0])
 
-    # for tree in rd_parser.parse(sentence):
-    #    print(tree)
-    print(grammarList)
+#    print(grammarList)
     buildNewGrammar()
     substituteWords()
   #  print_tree(grammarList, sentence)

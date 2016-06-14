@@ -110,8 +110,8 @@ def returnKlingon(english):
             word = key.replace(",", "").strip()
             print(word)
             return word
-    if not server:
-        returnKlingon(None)
+    # if not server:
+    #     returnKlingon(None)
 
 
 def returnword(word):
@@ -216,8 +216,8 @@ def update_definitions():
 
         complete_dictionary.update({key: list})
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 
     ##TODO: use synonyms or wordnet to grab definition

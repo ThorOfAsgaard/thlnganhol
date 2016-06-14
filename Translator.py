@@ -3,7 +3,7 @@ __author__ = 'thorofasgaard'
 import nltk
 
 import Dictionary
-import KlingonTranslator
+#import KlingonTranslator
 import Verbs
 import Grammar
 
@@ -15,12 +15,10 @@ previous = ""
 
 
 def translate(sentence):
-    if sentence is None or server is False:
+    if sentence is None and server is False:
         sentence = input("Enter your sentence and watch crazy things happen:")
     tokens = nltk.word_tokenize(sentence)
     tagged = nltk.pos_tag(tokens)
-    print(type(tagged))
-    print("Tagged:" + str(tagged))
     Grammar.wordorder(tagged, sentence)
 
 
@@ -35,17 +33,17 @@ def main():
     """)
     choice = input("What would you like to do?")
     if choice.upper() == "T":
-        translate()
+        translate(None)
     elif choice.upper() == "P":
         if previous.upper == "VERBS":
             Verbs.main()
         elif previous.upper == "DICTIONARY":
             Dictionary.main()
-        elif previous.upper == "HOME":
-            KlingonTranslator.main()
+        # elif previous.upper == "HOME":
+        #     KlingonTranslator.main()
         else:
             main()
 
 
-#if __name__ == "__main__":
-#    main()
+if __name__ == "__main__":
+   main()
