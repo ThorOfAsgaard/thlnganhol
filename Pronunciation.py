@@ -35,16 +35,14 @@ def write_pronunciation(word):
     for seq in complex:
         for m in re.finditer(seq, word):
             charmap.insert(m.start(), getLetter(seq))
-            word = word.replace(seq, '_')
+            word = word[m.start()].replace(seq, '_')
     for seq in simple:
         for m in re.finditer(seq, word):
             charmap.insert(m.start(), getLetter(seq))
-            word = word.replace(seq, '_')
+            word = word[m.start()].replace(seq, '_')
     output = "".join(charmap)
     #print(output)
     #print(charmap)
-    tts = gTTS(text=output, lang='ru')
-    tts.save(word + ".mp3")
 
 ##move to Writing.py probably
 def getklingon(word):
