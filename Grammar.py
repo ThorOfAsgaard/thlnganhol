@@ -50,7 +50,7 @@ def print_tree(grammar, sentence):
     print("----Printing Tree for:" + sentence + "----")
     tokens = nltk.word_tokenize(sentence)
     for token in tokens:
-        tokens[token] = pairs.get(token)
+        tokens[tokens.index(token)] = pairs.get(token)
     acceptableSentences = ' | '.join(grammar['S'])
     nouns = ' | '.join(grammar['N'])
     verbs = ' | '.join(grammar['V'])
@@ -90,7 +90,7 @@ def buildNewGrammar():
 
 
 def substituteWords():
-    global klingonGrammar
+    global klingonGrammar, pairs
     kGrammar = klingonGrammar
     print("---------Substituting Words---------")
     for noun in kGrammar['N']:
