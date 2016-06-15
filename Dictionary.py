@@ -3,7 +3,6 @@ from nltk.corpus import wordnet
 import FileHandler
 import NLTK_Functions
 import Pronunciation as p
-import threading
 
 __author__ = 'thorofasgaard'
 
@@ -43,6 +42,11 @@ def loadDictionary(language):
         ret = {vals[0].strip(): value.strip()}
         dictionary.update(ret)
 
+    #create the reverse
+    for key, value in dictionary.items():
+        vals = value.split(",")
+        for v in vals:
+           translation.update({v.strip(): key})
     print("**************** Dictionary File Loaded ****************")
     return dictionary
 
@@ -60,7 +64,7 @@ def find_synonyms(query):
             r = syn.lemma_names()  # list
             # (key, value) in r
             list.append(r)
-    print(str(list))
+  #  print(str(list))
     return list
 
 
@@ -78,6 +82,7 @@ def returnEnglish(klingon):
     :return:
     """
     word = ""
+
     if klingon is None:
         word = input('Enter your query, type "Q" to quit:')
         if word.upper() == 'Q':
@@ -99,19 +104,43 @@ def returnKlingon(english):
     :param english:
     :return:
     """
+    print("""
+    English -> Klingon
+    """)
     word = english
+
     if word is None:
         word = input("Enter the English query:")
         if word.upper() == "Q":
             return
 
+    #first, check the translation dictionary
+    if word in translation:
+        print("Got "+word +" in translation:" + translation.get(word))
+        return translation.get(word)
+    syns = find_synonyms(english)
+
     for key, value in dictionary.items():
-        if word.upper() in str(value).upper():
-            word = key.replace(",", "").strip()
-            print(word)
-            return word
-    # if not server:
-    #     returnKlingon(None)
+        vals = value.split(",")
+        for v in vals:
+            if word.upper() == v.upper().strip():
+                return key.replace(",", "").strip()
+
+    ##
+    # for key, value in dictionary.items():
+    #     for syn in syns:
+    #         for s in syn:
+    #             if word.upper() == s.upper().strip():
+    #                 print("foo")
+
+        # if word.upper() in str(value).upper():
+        #     word = key.replace(",", "").strip()
+        #     print(word)
+        #     return word
+
+        # TODO: Maybe use 'synonyms' first
+        # if not server:
+        #     returnKlingon(None)
 
 
 def returnword(word):
@@ -141,24 +170,29 @@ def lookup(query):
 
     retArray = []
     # Pronunciation.loadpronunciationpatrix()
-    for key, value in dictionary.items():
-        if (key is not None and value is not None) and (
-                        word.upper() in str(key).upper() or word.upper() in str(value).upper()):
-            value = value.replace(",", "").strip()
-            ret = str(key) + ":" + value
-            #       pron = "" + Pronunciation.getklingon(key) + ""
-            #      ret = ret + " " + pron
-            # chars = Pronunciation.getWriting(key)
-            # ret = ret + chars
-            print("Found a match, getting definition for " + key + ":" + str(complete_dictionary.get(key)))
-            retArray.append(ret)
-            if server:
-                retArray.append(str(p.getklingon(key)))
+    ret = returnKlingon(word.strip())
+
+    # for key, value in dictionary.items():
+    #     if (key is not None and value is not None) and (
+    #                     word.upper() in str(key).upper() or word.upper() in str(value).upper()):
+    #         value = value.replace(",", "").strip()
+    #         ret = str(key) + ":" + value
+    #         #       pron = "" + Pronunciation.getklingon(key) + ""
+    #         #      ret = ret + " " + pron
+    #         # chars = Pronunciation.getWriting(key)
+    #         # ret = ret + chars
+    #         print("Found a match, getting definition for " + key + ":" + str(complete_dictionary.get(key)))
+    #         retArray.append(ret)
+    #         if server:
+    #             retArray.append(str(p.getklingon(key)))
 
     if ret is "" or ret is None:
         ret = 'Unable to find "' + word + '" in the dictionary'
     else:
-        ret = word + ': ' + str(ret)
+        ret = ret + p.getklingon(ret)
+        ret = word + ': ' + ret
+
+    retArray = ret
 
     print(retArray)
 
@@ -216,9 +250,10 @@ def update_definitions():
 
         complete_dictionary.update({key: list})
 
-# if __name__ == "__main__":
-#     main()
+    # if __name__ == "__main__":
+    #     main()
 
 
     ##TODO: use synonyms or wordnet to grab definition
     ##TODO: write definition to the csv file first time
+loadDictionary("dictionary")

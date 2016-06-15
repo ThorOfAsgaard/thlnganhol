@@ -39,7 +39,7 @@ preposition = {'IN'}
 det = {'DT'}
 pronouns = {'PRP', 'PRP$'}
 
-
+pairs = {}
 # create/print a tree based off of the grammar
 def print_tree(grammar, sentence):
     """
@@ -89,33 +89,38 @@ def buildNewGrammar():
 
 def substituteWords():
     global klingonGrammar
+    kGrammar = klingonGrammar
     print("---------Substituting Words---------")
-    for noun in klingonGrammar['N']:
-        print(noun)
+    for noun in kGrammar['N']:
+        print("Looking up:" + noun)
         ret = Dictionary.returnKlingon(noun)
         if ret is not None:
-            klingonGrammar['N'].append("\"" + ret + "\"")
-            klingonGrammar['N'].remove(noun)
+            kGrammar['N'][kGrammar['N'].index(noun)] = "\"" + ret + "\""
+            pairs.update({noun: ret})
+            #kGrammar['N'].remove(noun)
+        else:
+            print("Couldn't find:" + noun)
     for verb in klingonGrammar['V']:
         ret = Dictionary.returnKlingon(verb)
         if ret is not None:
-            klingonGrammar['V'].append("\"" + ret + "\"")
-            klingonGrammar['V'].remove(verb)
-    for prep in klingonGrammar['P']:
+            kGrammar['V'][kGrammar['V'].index(verb)] = "\"" + ret + "\""
+            pairs.update({verb: ret})
+
+    for prep in kGrammar['P']:
         ret = Dictionary.returnKlingon(prep)
         if ret is not None:
-            klingonGrammar['P'].append("\"" + ret + "\"")
-            klingonGrammar['P'].remove(prep)
+            kGrammar['P'][kGrammar['P'].index(prep)] = "\"" + ret + "\""
+            pairs.update({prep: ret})
     for DET in klingonGrammar['Det']:
         ret = Dictionary.returnKlingon(DET)
         if ret is not None:
-            klingonGrammar['Det'].append("\"" + ret + "\"")
-            klingonGrammar['Det'].remove(DET)
-    for ADJ in klingonGrammar['Adj']:
+            kGrammar['Det'][kGrammar['Det'].index(DET)] = "\"" + ret + "\""
+            pairs.update({DET: ret})
+    for ADJ in kGrammar['Adj']:
         ret = Dictionary.returnKlingon(ADJ)
         if ret is not None:
-            klingonGrammar['Adj'].append("\"" + ret + "\"")
-            klingonGrammar['Adj'].remove(ADJ)
+            kGrammar['Adj'][kGrammar['Adj'].index(ADJ)] = "\"" + ret + "\""
+            pairs.update({ADJ: ret})
 
     print("Klingon Grammar:" + str(klingonGrammar))
 
@@ -145,4 +150,4 @@ def wordorder(tokens, sentence):
 #    print(grammarList)
     buildNewGrammar()
     substituteWords()
-  #  print_tree(grammarList, sentence)
+    print_tree(grammarList, sentence)

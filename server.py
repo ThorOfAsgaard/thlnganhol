@@ -34,7 +34,7 @@ def commonphrases():
 @app.route('/pronunciation', methods=['POST', 'GET'])
 def getPronunciation():
     ret = str(request.args['klingon'])
-    p.loadpronunciationpatrix()
+
     word = p.getklingon(ret)
     return word
 
@@ -47,13 +47,14 @@ def search():
     # retString = LoadDictionary.lookup(ret)
     ret = Dictionary.lookup(ret)
     retHtml = ""
+
     for item in ret:
         retHtml += "<div class='well well-sm'>"
         retHtml += str(item)
 
         retHtml += "</div>"
 
-    return retHtml
+    return ret
 
 
 @app.route('/synonyms', methods=['POST', 'GET'])

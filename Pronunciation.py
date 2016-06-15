@@ -29,20 +29,28 @@ def loadpronunciationmatrix():
 def write_pronunciation(word):
     global complex, simple
     charmap = []
+    ipamap = []
     output = ""
     if word is None:
         word = input("Enter the klingon word ->")
     for seq in complex:
         for m in re.finditer(seq, word):
             charmap.insert(m.start(), getLetter(seq))
-            word = word[m.start()].replace(seq, '_')
+            ipamap.insert(m.start(), pronunciation_list.get(seq))
+            rep = ""
+            for c in seq:
+                rep += "_"
+            word = word[m.start()].replace(seq, rep)
+
     for seq in simple:
         for m in re.finditer(seq, word):
             charmap.insert(m.start(), getLetter(seq))
-            word = word[m.start()].replace(seq, '_')
+            ipamap.insert(m.start(), pronunciation_list.get(seq))
+            rep = ""
+            for c in seq:
+                rep += "_"
+            word = word[m.start()].replace(seq, rep)
     output = "".join(charmap)
-    #print(output)
-    #print(charmap)
 
 ##move to Writing.py probably
 def getklingon(word):
@@ -57,11 +65,22 @@ def getklingon(word):
         for m in re.finditer(seq, word):
             charmap.insert(m.start(), getWriting(seq))
             word = word.replace(seq, '_')
-
+            rep = "_"
+            print("Found complex...")
+            for c in seq:
+                print("replacing:" + c)
+                    #rep += "_"
+                word[m.start()].replace(c, rep)
     for seq in simple:
           for m in re.finditer(seq, word):
-
             charmap.insert(m.start(), getWriting(seq))
+            rep = "_"
+            print("Found simple...")
+            for c in seq:
+                print("replacing:" + c)
+                    #rep = "_"
+                word[m.start()].replace(c, rep)
+    print(word)
         #if seq in word:
 #
  #           charmap.insert(word.index(seq), getWriting(seq))
@@ -107,6 +126,8 @@ def main():
     if choice.upper() == "G":
         getklingon(None)
 
+
+loadpronunciationmatrix()
 
 if __name__ == "__main__":
     main()
