@@ -1,3 +1,5 @@
+import copy
+
 __author__ = 'ntallmon'
 
 import nltk
@@ -49,8 +51,9 @@ def print_tree(grammar, sentence):
     """
     print("----Printing Tree for:" + sentence + "----")
     tokens = nltk.word_tokenize(sentence)
-    for token in tokens:
-        tokens[tokens.index(token)] = pairs.get(token)
+    #for token in tokens:
+    #    tokens[tokens.index(token)] = pairs.get(token)
+ #   print(grammarList)
     acceptableSentences = ' | '.join(grammar['S'])
     nouns = ' | '.join(grammar['N'])
     verbs = ' | '.join(grammar['V'])
@@ -73,6 +76,7 @@ def print_tree(grammar, sentence):
     print(newGrammar)
     gram = nltk.CFG.fromstring(newGrammar)
     parser = nltk.ChartParser(gram)
+    ##FIXME: doesn't print a new chart, probably need to go off of english
     for tree in parser.parse(tokens):
         print(tree)
         print(newGrammar)
@@ -82,49 +86,66 @@ def print_tree(grammar, sentence):
 def buildNewGrammar():
     global grammarList, klingonGrammar
     print("---------Building new Grammar---------")
-    klingonGrammar['N'] = grammarList['N']
-    klingonGrammar['V'] = grammarList['V']
-    klingonGrammar['P'] = grammarList['P']
-    klingonGrammar['Det'] = grammarList['Det']
-    klingonGrammar['Adj'] = grammarList['Adj']
+    gList = copy.deepcopy(grammarList)
+    klingonGrammar['N'] = gList['N']
+    klingonGrammar['V'] = gList['V']
+    klingonGrammar['P'] = gList['P']
+    klingonGrammar['Det'] = gList['Det']
+    klingonGrammar['Adj'] = gList['Adj']
 
 
-def substituteWords():
-    global klingonGrammar, pairs
+def substituteWords(sentence):
+    global klingonGrammar, pairs, grammarList
     kGrammar = klingonGrammar
+    gList = grammarList
     print("---------Substituting Words---------")
     for noun in kGrammar['N']:
         print("Looking up:" + noun)
         ret = Dictionary.returnKlingon(noun)
         if ret is not None:
+            #sentence = sentence.replace(noun, ret)
             kGrammar['N'][kGrammar['N'].index(noun)] = "\"" + ret + "\""
+
             pairs.update({noun: ret})
             #kGrammar['N'].remove(noun)
         else:
             print("Couldn't find:" + noun)
     for verb in klingonGrammar['V']:
+
         ret = Dictionary.returnKlingon(verb)
         if ret is not None:
+            #sentence = sentence.replace(verb, ret)
             kGrammar['V'][kGrammar['V'].index(verb)] = "\"" + ret + "\""
             pairs.update({verb: ret})
 
     for prep in kGrammar['P']:
         ret = Dictionary.returnKlingon(prep)
         if ret is not None:
+            #sentence = sentence.replace(prep, ret)
             kGrammar['P'][kGrammar['P'].index(prep)] = "\"" + ret + "\""
             pairs.update({prep: ret})
     for DET in klingonGrammar['Det']:
         ret = Dictionary.returnKlingon(DET)
         if ret is not None:
+            #sentence = sentence.replace(DET, ret)
             kGrammar['Det'][kGrammar['Det'].index(DET)] = "\"" + ret + "\""
             pairs.update({DET: ret})
     for ADJ in kGrammar['Adj']:
         ret = Dictionary.returnKlingon(ADJ)
         if ret is not None:
+            #sentence = sentence.replace(ADJ, ret)
             kGrammar['Adj'][kGrammar['Adj'].index(ADJ)] = "\"" + ret + "\""
             pairs.update({ADJ: ret})
 
     print("Klingon Grammar:" + str(klingonGrammar))
+    print("Glossed Sentence:" + sentence)
+    sent = sentence.split(" ")
+    for s in sent:
+        print(s)
+        sent[sent.index(s)] = pairs.get(s.strip())
+    print(sent)
+    print(' '.join(sent))
+    return ' '.join(sent)
 
 
 def wordorder(tokens, sentence):
@@ -151,5 +172,7 @@ def wordorder(tokens, sentence):
 
 #    print(grammarList)
     buildNewGrammar()
-    substituteWords()
+    newSentence = copy.deepcopy(sentence)
+    print_tree(grammarList, newSentence)
+    sentence = substituteWords(sentence)
     print_tree(grammarList, sentence)
