@@ -1,0 +1,5 @@
+projectKey=org.sonarqube:python-simple-sonar-scanner
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/org.sonarqube:python-simple-sonar-scanner
+ceTaskId=AVUNh7eyEJ_mNBTX_6D_
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVUNh7eyEJ_mNBTX_6D_
