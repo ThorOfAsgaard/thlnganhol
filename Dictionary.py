@@ -65,6 +65,7 @@ def find_synonyms(query):
             # (key, value) in r
             list.append(r)
   #  print(str(list))
+            ##TODO: also query
     return list
 
 

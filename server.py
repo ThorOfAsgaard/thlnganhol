@@ -25,9 +25,11 @@ def commonphrases():
     ret = CommonPhrases.list_phrases_web()
     html = ""
     for phrase in ret:
-        html += "<div class='well well-sm'>"
-        html += str(phrase)
-        html += "</div>"
+        print(phrase)
+
+        html += "<li >"
+        html += str(phrase) + ':' + str(ret[phrase])
+        html += "</li>"
     return html
 
 

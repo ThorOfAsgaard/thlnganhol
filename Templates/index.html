@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/static/bower_components/bootstrap-material-design/dist/css/ripples.min.css"/>
     <link href='https://fonts.googleapis.com/css?family=Voces' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript"
             src="/static/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
     <script type="text/javascript"
@@ -132,6 +133,17 @@
         font-family: "ipa";
         src: url("static/ipa_font.woff") format("woff");
         }
+        h3 {
+            color: #fff !important;
+        }
+        input {
+            background: #fff !important;
+            display: block;
+            border-radius: 3px;
+            border: 0px;
+            max-width: 80%;
+            min-width: 50%;
+        }
     </style>
 
     <script>
@@ -150,7 +162,7 @@ $("#searchQuery").on('keyup', function() {
                     $("#synonyms").html(ret);
                 });
         });
-        }
+        }ƒ
 });
 $(".common-phrases").on('click', function() {
         $.get('/common-phrases', function(ret) {
@@ -166,6 +178,9 @@ $(document).on('click', ".synonyms", function (){
 
 });
 });
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
 
 
 
@@ -185,8 +200,8 @@ $(document).on('click', ".synonyms", function (){
     <div class="jumbotron center-block" style="background: #000">
         <div class="">
             <image class="img-responsive center-block" src="static/image/Klingon_Empire_logo.png"></image>
-            <h2 class="text-danger text-center">
-                <div title="De'wl' (computer)">
+            <h2 class="text-danger text-center" alt="">
+                <div title="De'wl' (computer)" alt="De'wl' (computer)" data-toggle="tooltip" data-placement="top">
                 <span class="icon-D"></span>
                 <span class="icon-e"></span>
                 <span class="icon-glottal"></span>
@@ -195,9 +210,8 @@ $(document).on('click', ".synonyms", function (){
                 <span class="icon-glottal"></span>
                     </div>
                 <span></span>
-                <div title="thlinganhol (Klingon Language)">
+                <div title="thlinganhol (Klingon Language)" data-toggle="tooltip" data-placement="top" alt="thlinganhol (Klingon Language)">
                 <span class="icon-tlh"></span>
-
                 <span class="icon-i"></span>
                 <span class="icon-ng"></span>
                 <span class="icon-a"></span>
@@ -206,7 +220,7 @@ $(document).on('click', ".synonyms", function (){
                 <span class="icon-o"></span>
                 <span class="icon-l"></span>
                     </div>
-                <div title="yi'e'l (welcome)">
+                <div title="yi'e'l (welcome)" data-toggle="tooltip" data-placement="top" alt="yi'e'l (welcome)">
                 <span class="icon-y"></span>
                 <span class="icon-I"></span>
                 <span class="icon-glottal"></span>
@@ -220,28 +234,34 @@ $(document).on('click', ".synonyms", function (){
 
         </div>
         <ul class="nav nav-tabs danger" role="tablist">
-            <li role="presentation"><a href="#dictionary" role="tab" data-toggle="tab" aria-controls="dictionary" data-target="#dictionary" title="mu'ghom (dictionary)">
+            <li role="presentation"><a href="#dictionary" role="tab" data-toggle="tab" aria-controls="dictionary" data-target="#dictionary" >
+            <span data-toggle="tooltip" data-placement="top" title="mu'ghom (dictionary)" title="mu'ghom (dictionary)">
                 <span class="icon-m" title="m"></span>
                 <span class="icon-u" title="u"></span>
                 <span class="icon-glottal" title="glottal"></span>
                 <span class="icon-gh" title="gh"></span>
                 <span class="icon-o" title="o"></span>
                 <span class="icon-m" title="m"></span>
+            </span>
             </a>
             </li>
-            <li ><a href="#translate" aria-controls="translate" role="tab" data-toggle="tab" title="translate"  data-target="#dictionary" >
+            <li ><a href="#translate" aria-controls="translate" role="tab" data-toggle="tab" title="translate"  data-target="#translate" >
+                <span data-toggle="tooltip" data-placement="top" title="mu'gh (Translate)">
                 <span class="icon-m"></span>
                 <span class="icon-u">
                 </span>
                 <span class="icon-gh"></span>
-
+                </span>
                 </a></li>
                <li><a href="#grammar" aria-controls="grammar" role="tab" data-toggle="tab" title="grammar">
+                   <span data-toggle="tooltip" data-placement="top" title="pab (Grammar)">
                 <span class="icon-p"></span>
                 <span class="icon-a"></span>
                 <span class="icon-b"></span>
+                   </span>
                 </a></li>
             <li><a href="#pronunciation" aria-controls="pronunciation" role="tab" data-toggle="tab" title="pronunciation">
+                 <span data-toggle="tooltip" data-placement="top" title="chay'jathl (Pronunciation)">
                 <span class="icon-ch"></span>
                 <span class="icon-a"></span>
                 <span class="icon-y"></span>
@@ -249,7 +269,9 @@ $(document).on('click', ".synonyms", function (){
                 <span></span>
                 <span class="icon-j"></span>
                 <span class="icon-a"></span>
-                <span class="icon-tlh"></span></a>
+                <span class="icon-tlh"></span>
+                 </span>
+            </a>
             </li>
 
 
@@ -257,7 +279,7 @@ $(document).on('click', ".synonyms", function (){
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="dictionary">
                 <div class="btn-bar btn-bar-sm">
-                    <button class="btn btn-default btn-raised common-phrases">
+                    <button class="btn btn-default btn-raised common-phrases" alt="ja'taH'mey (Common Phrases)" data-toggle="tooltip" data-title="ja'taH'mey (Common Phrases)">
                         <span class="icon-j"></span>
                         <span class="icon-a"></span>
                         <span class="icon-glottal"></span>
@@ -271,10 +293,10 @@ $(document).on('click', ".synonyms", function (){
                         </button>
                 </div>
                 <form-group>
-                    <label>
-                        yu' vItlhobnIS:
-                        <input type="text" class="form-control" id="searchQuery" placeholder="question, you must ask!">
-                    </label>
+
+                        <h3>yu' vItlhobnIS</h3>:
+                        <input type="text"  id="searchQuery" placeholder="question, you must ask!">
+
                 </form-group>
                 <h3>Result</h3>
 

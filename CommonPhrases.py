@@ -5,14 +5,16 @@ phrases = {}
 
 
 def loadPhrases():
+    ###TODO: klingon
     file = FileHandler.loadFile('Resources/CommonPhrases.csv', 'r')
     for line in file:
-        details = line.split(',')
+        details = line.split(';')
+        print(details)
         values = ""
         for x in range(1, len(details)):
             values +=details[x].strip()+ ","
 
-        entry = {details[0]: {values}}
+        entry = {details[0]: values}
         phrases.update(entry)
     # phrases_menu()
 
@@ -36,9 +38,9 @@ def return_all():
 
 
 def list_phrases_web():
-    ret = []
+    ret = {}
     for key, value in phrases.items():
-        ret.append({key: str(value)})
+        ret[key]= str(value)
     return ret
 
 
