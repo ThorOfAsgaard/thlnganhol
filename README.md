@@ -6,6 +6,7 @@ Requirements:
 * NLTK (Natural Language Toolkit)
 * Flask Web server
 
+```pip install -r requirements.txt```
 
 ### Version
 0.0.1
