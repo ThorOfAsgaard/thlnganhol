@@ -1,3 +1,4 @@
 Flask==0.12.2
 nltk==3.2.5
-
+setuptools==38.5.1
+gTTS==1.2.2

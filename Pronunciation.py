@@ -1,5 +1,5 @@
 import re
-from setuptools.compat import unicode
+# from setuptools.compat import unicode
 
 __author__ = 'thorofasgaard'
 

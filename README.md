@@ -17,6 +17,11 @@ Requirements:
 
 ### Installation
 * Clone the repo
+* run nltk downloader 
+
+```import nltk``` 
+
+```nltk.download()```
 * Run the flask server: python server.py
 * OR run the CLI python KlingonTranslator.py
 
